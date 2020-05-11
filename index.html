@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tugas Besar</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<style>
+
+		html{
+			scroll-behavior: smooth;
+		}
+		body{
+			margin: 0;
+			font-family: sans-serif;
+		}
+
+		.wrapper{
+			height: 100%;
+			margin: 0 auto;
+			width: 1349px;
+		}
+
+		.header{
+			background-color: #E6E6E6;
+			height: 70px;
+			margin: 0;
+			width: 100%;
+		}
+
+		.header ul{
+			list-style-type: none;
+			margin: 0;
+		}
+		
+		.header li a{
+			color: black;
+			float: right;
+			text-decoration: none;
+			margin-right: 20px;
+			margin-top: 24px;
+		}
+
+		.icon {
+			display: inline-block;
+			width: 23px;
+			height: auto;
+			filter: invert(30%);
+		}
+
+		.rightN img{
+			float:right;
+			width: 23px;
+ 			height: auto;
+			margin-right: 33px;
+		}
+
+		.user-nav img{
+ 			float:right;
+			width: 23px;
+ 			height: auto;
+ 			margin-right: 35px;
+		}
+
+		.dropdown {
+			float: right;
+		}
+
+		.dropdown .dropbtn {
+			background-color: inherit;
+			border: none;
+			color: #666;
+			cursor: pointer;
+			font-family: inherit;
+			font-size: 13px;  
+			margin: 0;
+			outline: none;
+			padding: 6px;
+		}
+
+		.dropdown-content{
+			background-color: #f9f9f9;
+			display: none;
+			position: absolute;
+			z-index: 1;
+		}
+
+		.dropdown-content a{
+			color: black;
+			display: block;
+			float: none;
+			text-decoration: none;
+			text-align: left;
+			padding: 12px 16px;
+		}
+
+		.dropdown .collapse{
+			background-color: rgba(30,40,50,0.1);
+			width: auto;
+		}
+
+		.up{
+			-webkit-transform: rotate(-180deg);
+			transform: rotate(-180deg);
+		}
+
+		.mypanel{
+			background-color: #F3F4F5;
+			height: 31px;
+		}
+
+		.affix{
+			top: 0;
+			width: 100%;
+			z-index: 999 !important;
+		}
+
+		.content-row{
+			margin-top: 40px;
+		}
+
+		.side-menu{
+			background-color: #fcfcfc;
+			border-radius: 10px;
+			box-shadow: 1.4px 1.4px 4px #ededed;
+			padding-top: 15px;
+			margin:0 40px 0 12px;
+		}
+
+		.product .row{
+			width: auto;
+		}
+
+		.product .col-sm-3{
+			padding: 0 12.8px 0 0;
+			width: auto;
+		}
+
+		.product .panel-default{
+			border:none;
+			border-radius: 10px;
+			box-shadow: 1.4px 1.4px 4px #ddd;
+			height: 300px;
+			width: 185px;
+		}
+
+		.product .panel-default a{
+			text-decoration: none;
+		}
+
+		.product .panel-default:hover a{
+			overflow: visible;
+			background-color: #a0a0;
+		}		
+
+		.product .panel-footer{
+			background-color: #fafafa;
+			border: none;
+			border-radius: 0 0 10px 10px;
+			height: 115px;
+		}
+
+		.product .title{
+			color: #333;
+			font-size: 1.6rem;
+			font-weight: bolder;
+			margin-bottom: 8px;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+		}
+
+		.product #tooltip{
+
+		}
+
+		.product .desc{
+			height: 58px;
+			font-size: 1.3rem;
+			color: #777;
+			overflow: hidden;
+			text-overflow: clip;
+		}
+
+		.product .panel-body{
+			border:none;
+			padding: 10px;
+		}
+
+		.product .panel-body img{
+			max-height: 170px;
+			max-width: 165px;
+		}
+
+		.footer{
+			bottom: 0;
+			left: 0;
+			background-color: #8f8f8f;
+			width: 100%;
+		}
+	</style>
+	<script>
+
+		//author: irsyad muhammad
+		//function for switching caret in panel "sort"
+		$(document).ready(function(){
+			//button was clicked 
+			$('[data-toggle="dropdown"]').click(function(){
+				$("#sortCaret").toggleClass("up");
+			});
+		});
+/*		============================================================ADDITIONAL FUNCTION FOR PANEL======
+		//author: irsyad muhammad
+		//function for switching caret in panel "sort"
+		$(document).ready(function(){
+			//button was clicked 
+			$("button").click(function(){
+				if($(this).is("#sortBtn")){
+					//switching class from down class to up class
+					$("#sortCaret").toggleClass("up");
+				}
+			});
+		});
+		//author: irsyad muhammad
+		//function for switching caret in panel "sort"
+		$(document).ready(function(){
+			//button was clicked 
+			$("button").click(function(){
+				if($(this).is("#sortBtn")){
+					//switching class from down class to up class
+					$("#sortCaret").toggleClass("up");
+				}
+			});
+		});
+================================================================================================*/
+
+	//function tooltip
+	//w3school.com
+	$(document).ready(function(){
+		// $(".title").mouseover(function (argument) {
+		// 	var index = $(".title").index(this);
+		// 	fillTitle(index);
+  // 			$('[data-toggle="tooltip"]').tooltip(); 
+		// });
+		// $(".title").mouseout(function (argument) {
+		// 	var index = null;
+			fillTitle();
+  			$('[data-toggle="tooltip"]').tooltip(); 
+		});
+		  
+	// });
+
+	//function fill attribute title in product title class
+	//irsyad muhammad
+	function fillTitle() {
+		document.getElementById('productTitle').setAttribute("title", document.getElementById("productTitle").innerHTML);
+		// document.getElementById("productTitle")[index].title = 
+	// 	var name = document.getElementById('productTitle').querySelectorAll(".title");
+	// 	name[index].title = "document.getElementById('productTitle').innerHTML";
+	// }
+	</script>
+</head>
+
+<body>
+	<nav class="header">
+		<div class="col-sm-2" style="margin-top: 23px;">
+			<img src="./img" alt="logo">
+		</div>
+		<div class="col-sm-5"></div>
+		<span class="col-sm-5 rightN " style="margin-top:23px; ">
+			<span class="user-nav">
+				<a href="#"><img src="./img/social.svg" class="icon icon-user"></a>
+				<!-- Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a> -->
+			</span>
+			<div class="nav-icon">
+					<a href="#"><img src="./img/musical-instrument.svg" class="icon"></object></a><!--Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>-->
+					<a href="#"><img src="./img/envelopes.svg" class="icon"></object></a>
+					<!--Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a> -->
+					<a href="#"><img src="./img/commerce-and-shopping.svg" class="icon"></object></a><!--Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>-->
+			</div>
+			
+		</span>
+	</nav>
+	<nav class="mypanel" data-spy="affix" data-offset-top="67">	
+		<div class="wrapper">
+			<div class="container-fluid">
+				<div class="dropdown">
+					<button type="button" class="dropbtn" data-toggle="dropdown" id="sortBtn">Sort <span class="caret down" id="sortCaret"></span></button>
+					<!-- sub menu of dropdown btn -->
+					<ul class="dropdown-menu dropdown-menu-right">
+						<li><a href="#">test1</a></li>
+						<li><a href="#">test1</a></li>
+						<li><a href="#">test1</a></li>
+					</ul>
+				</div>
+				<div class="dropdown">
+					<button type="button" class="dropbtn" data-toggle="dropdown">2 <span class="caret down" id="sortId"></span></button>
+					<ul class="dropdown-menu dropdown-menu-right">
+						<li><a href="#">test1</a></li>
+						<li><a href="#">test1</a></li>
+						<li><a href="#">test1</a></li>
+					</ul>
+				</div>
+				<div class="dropdown">
+					<button type="button" class="dropbtn" data-toggle="dropdown">Test<span class="caret down" id=""></span></button>
+
+					<ul class="dropdown-menu dropdown-menu-right">
+						<li><a href="#">test1</a></li>
+						<li><a href="#">test1</a></li>
+						<li><a href="#">test1</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</nav>
+	<div class="wrapper">
+		<div class="container-fluid" style="margin-top: 50px;">
+			<div class="col-sm-2 sidenav side-menu">
+				<article>This is side bar</article>
+				<ul>
+					<li><a href="#">Test1</a></li>
+					<li><a href="#">Test1</a></li>
+					<li><a href="#">Test1</a></li>
+					<li><a href="#">Test1</a></li>
+				</ul>
+			</div>
+			<div class="col-sm-9 product">
+				<div class="row">
+					<div class="col-sm-3">
+						<div class="panel panel-default"><a href="#">
+							<div class="panel-body"><img src="./img/8516120-1.jpg"></div>
+							<div class="panel-footer">
+								<div class="title" id="productTitle" data-toggle="tooltip" data-placement="top" title="a">Nike 2019 ori vietnam</div>
+								<div class="desc">Lorem ipsum do Lorem ipsum doLorem ipsumsum doLorem ipsumsum doLorem ipsumsum doLorem ipsumsum doLorem ipsumsum doLorem ipsum </div>
+							</div>
+							</a>
+						</div>
+					</div>
+					<div class="col-sm-3">
+						<div class="panel panel-default"><a href="#">
+							<div class="panel-body"><img src="./img/8516120-1.jpg"></div>
+							<div class="panel-footer">
+								<div class="title" id="productTitle" data-toggle="tooltip" data-placement="top" title="">Gajah Mada X Supreme</div>
+								<div class="desc">Lorem ipsum do Lorem ipsum doLorem ipsumsum doLorem ipsumsum doLorem ipsumsum doLorem ipsumsum doLorem ipsumsum doLorem ipsum </div>
+							</div>
+							</a>
+						</div>
+					</div>
+					<div class="col-sm-3">
+						<div class="panel panel-default"><a href="#">
+							<div class="panel-body"><img src="./img/8516120-1.jpg"></div>
+							<div class="panel-footer">
+								<div class="title" id="productTitle" data-toggle="tooltip" data-placement="top" title="">Nike 2019 ori vietnam</div>
+								<div class="desc">Lorem ipsum do Lorem ipsum doLorem ipsumsum doLorem ipsumsum doLorem ipsumsum doLorem ipsumsum doLorem ipsumsum doLorem ipsum </div>
+							</div>
+							</a>
+						</div>
+					</div>
+					<div class="col-sm-3">
+						<div class="panel panel-default"><a href="#">
+							<div class="panel-body"><img src="./img/8516120-1.jpg"></div>
+							<div class="panel-footer">
+								<div class="title">Nike 2019 ori vietnam</div>
+								<div class="desc">Lorem ipsum do Lorem ipsum doLorem ipsumsum doLorem ipsumsum doLorem ipsumsum doLorem ipsumsum doLorem ipsumsum doLorem ipsum </div>
+							</div>
+							</a>
+						</div>
+					</div>
+					<div class="col-sm-3">
+						<div class="panel panel-default"><a href="#">
+							<div class="panel-body"><img src="./img/8516120-1.jpg"></div>
+							<div class="panel-footer">
+								<div class="title">Nike 2019 ori vietnam</div>
+								<div class="desc">Lorem ipsum do Lorem ipsum doLorem ipsumsum doLorem ipsumsum doLorem ipsumsum doLorem ipsumsum doLorem ipsumsum doLorem ipsum </div>
+							</div>
+							</a>
+						</div>
+					</div>
+					<div class="col-sm-3">
+						<div class="panel panel-default"><a href="#">
+							<div class="panel-body"><img src="./img/8516120-1.jpg"></div>
+							<div class="panel-footer">
+								<div class="title">Nike 2019 ori vietnam</div>
+								<div class="desc">Lorem ipsum do Lorem ipsum doLorem ipsumsum doLorem ipsumsum doLorem ipsumsum doLorem ipsumsum doLorem ipsumsum doLorem ipsum </div>
+							</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+		<div class="wrapper">
+			<div class="container-fluid" style="padding-top: 25px;">
+				<div class="col-sm-3">
+					<div class="sidenav" style="color: #eaeaea">
+						<article><B>KELOMPOK - </B></article>
+						<ul style="list-style: decimal; font-size: 1.2rem;">
+							<li>Leader : I Gusti Made</li>
+							<li>Analyst: Muhammad Hasbi I</li>
+							<li>Developer: Gemintang Sangkaji F</li>
+							<li>Developer: Marcell Ivaldri R</li>
+							<li>Designer: Irsyad Muhammad</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-sm-5">
+					<!-- <article><b>TRACKER</b></article> -->
+				</div>
+				<div class="col-sm-4" style="text-align: center; color: #ddd;">			
+					<article>&copy; 2020, by <a href="www.instagram.com/imsyad">irsyad</a></article>
+					<span>Date created: 04 May 2020 - 10 May 2020<br>Last Updated: 11 May 2020<br>Bandung, Indonesia</span>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
