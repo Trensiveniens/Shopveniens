@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Post</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<style>
+
+		html{
+			scroll-behavior: smooth;
+		}
+
+		body{
+			margin: 0;
+			font-family: sans-serif;
+		}
+
+		.wrapper{
+			height: 100%;
+			margin: 0 auto;
+			width: 1349px;
+		}
+
+		.header{
+			background-color: #E6E6E6;
+			height: 70px;
+			margin: 0;
+			width: 100%;
+		}
+
+		.header ul{
+			list-style-type: none;
+			margin: 0;
+		}
+		
+		.header li a{
+			color: black;
+			float: right;
+			text-decoration: none;
+			margin-right: 20px;
+			margin-top: 24px;
+		}
+
+		.icon {
+			display: inline-block;
+			width: 23px;
+			height: auto;
+			filter: invert(30%);
+		}
+
+		.rightN img{
+			float:right;
+			width: 23px;
+ 			height: auto;
+			margin-right: 33px;
+		}
+
+		.user-nav img{
+ 			float:right;
+			width: 23px;
+ 			height: auto;
+ 			margin-right: 35px;
+		}
+
+		.product-title{
+			color: #2a2a2a;
+			font-size: 24px;
+			font-weight: bolder;
+			margin: 0;
+			overflow: hidden;
+			padding: 0 15px;
+		}
+
+		.product-label-sm{
+			cursor: default;
+			color: #D1CAC9;
+			font-size: 15px; 
+			width: 50px;
+		}
+
+		.product-price{
+			color: #FF4D31;
+			font-size: 21px;
+			font-weight: bold;
+			margin: 0;
+		}
+
+		.lay-product.img{
+			height: auto;
+			width: auto;
+		}
+
+		.product-img{
+			max-height: 700px;
+			height: auto;
+			width: 360px;
+		}
+
+		.line-break{
+			background-color: #e1e1e1; 
+			height: 1px;
+			margin: 17px 0;
+			width:100%; 
+		}
+	</style>
+</head>
+<body>
+	<nav class="header">
+		<div class="col-sm-2" style="margin-top: 23px;">
+			<img src="./img" alt="logo">
+		</div>
+		<div class="col-sm-5"></div>
+		<span class="col-sm-5 rightN " style="margin-top:23px; ">
+			<span class="user-nav">
+				<a href="#"><img src="./img/social.svg" class="icon icon-user"></a>
+				<!-- Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a> -->
+			</span>
+			<div class="nav-icon">
+					<a href="#"><img src="./img/musical-instrument.svg" class="icon"></object></a><!--Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>-->
+					<a href="#"><img src="./img/envelopes.svg" class="icon"></object></a>
+					<!--Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a> -->
+					<a href="#"><img src="./img/commerce-and-shopping.svg" class="icon"></object></a><!--Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>-->
+			</div>
+			
+		</span>
+	</nav>
+	<div class="wrapper">
+		<div class="row">
+			<div class="container" style="margin: 50px auto 80px auto;">
+				<div class="col-sm-3 lay-product-img" style="padding: 0" >
+					<img class="product-img" src="./img/Task1.2_1A_191524014.jpg">
+				</div>
+				<div class="col-sm-1"></div>
+				<div class="col-md-8" >
+					<div class="row">
+						<h1 class="product-title">Switch CherryMX - Blue Brown Black Red - Mechanical Keyboard Cherry MX - Brown Switch.</h1>
+					</div>
+					<hr class="line-break">
+					<div class="row" style="padding: 0 15px;">
+						<dt>
+							<p disabled class="product-label-sm">Harga</p>
+						</dt>
+						<dd>
+							<div></div>
+							<h3 class="product-price"> RP100.000</h3>
+						</dd>
+					</div>
+					<hr class="line-break">
+					<div class="row" style="padding: 0 15px;">
+						<dt>
+							<p disabled class="product-label-sm">Deskripsi</p>
+						</dt>
+						<dd >
+							<div></div>
+							<p class="product-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+						</dd>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<nav class="navbar navbar-inverese" style="background-color: #333; border-radius: 0;">
+		<div class="container-fluid">
+			<div class="navbar-header">
+					<ul class="nav navbar-nav">
+						<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Grouping
+						<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="#">Poisitive</a></li>
+							<li><a href="#">Negative</a></li>
+							<li><a href="#">Neutral</a></li>
+						</ul>
+						</li>
+					</ul>
+			</div>
+		</div>
+	</nav>
+</body>
+</html>
