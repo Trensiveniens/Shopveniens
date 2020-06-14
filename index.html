@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Tugas Besar</title>
+	<title>ShopVeniens</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" href="./img/ticon.ico">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
@@ -11,6 +12,7 @@
 		html{
 			scroll-behavior: smooth;
 		}
+		
 		body{
 			margin: 0;
 			font-family: sans-serif;
@@ -210,62 +212,62 @@
 				$("#sortCaret").toggleClass("up");
 			});
 		});
-/*		============================================================ADDITIONAL FUNCTION FOR PANEL======
-		//author: irsyad muhammad
-		//function for switching caret in panel "sort"
-		$(document).ready(function(){
-			//button was clicked 
-			$("button").click(function(){
-				if($(this).is("#sortBtn")){
-					//switching class from down class to up class
-					$("#sortCaret").toggleClass("up");
-				}
+		/*		============================================================ADDITIONAL FUNCTION FOR PANEL======
+			//author: irsyad muhammad
+			//function for switching caret in panel "sort"
+			$(document).ready(function(){
+				//button was clicked 
+				$("button").click(function(){
+					if($(this).is("#sortBtn")){
+						//switching class from down class to up class
+						$("#sortCaret").toggleClass("up");
+					}
+				});
 			});
-		});
-		//author: irsyad muhammad
-		//function for switching caret in panel "sort"
-		$(document).ready(function(){
-			//button was clicked 
-			$("button").click(function(){
-				if($(this).is("#sortBtn")){
-					//switching class from down class to up class
-					$("#sortCaret").toggleClass("up");
-				}
+			//author: irsyad muhammad
+			//function for switching caret in panel "sort"
+			$(document).ready(function(){
+				//button was clicked 
+				$("button").click(function(){
+					if($(this).is("#sortBtn")){
+						//switching class from down class to up class
+						$("#sortCaret").toggleClass("up");
+					}
+				});
 			});
-		});
-================================================================================================*/
+		================================================================================================*/
 
-	//function tooltip
-	//w3school.com
-	$(document).ready(function(){
-		// $(".title").mouseover(function (argument) {
-		// 	var index = $(".title").index(this);
-		// 	fillTitle(index);
-  // 			$('[data-toggle="tooltip"]').tooltip(); 
+		//function tooltip
+		//w3school.com
+		$(document).ready(function(){
+			// $(".title").mouseover(function (argument) {
+			// 	var index = $(".title").index(this);
+			// 	fillTitle(index);
+	  // 			$('[data-toggle="tooltip"]').tooltip(); 
+			// });
+			// $(".title").mouseout(function (argument) {
+			// 	var index = null;
+				fillTitle();
+	  			$('[data-toggle="tooltip"]').tooltip(); 
+			});
+			  
 		// });
-		// $(".title").mouseout(function (argument) {
-		// 	var index = null;
-			fillTitle();
-  			$('[data-toggle="tooltip"]').tooltip(); 
-		});
-		  
-	// });
 
-	//function fill attribute title in product title class
-	//irsyad muhammad
-	function fillTitle() {
-		document.getElementById('productTitle').setAttribute("title", document.getElementById("productTitle").innerHTML);
-		// document.getElementById("productTitle")[index].title = 
-	// 	var name = document.getElementById('productTitle').querySelectorAll(".title");
-	// 	name[index].title = "document.getElementById('productTitle').innerHTML";
-	// }
+		//function fill attribute title in product title class
+		//irsyad muhammad
+		function fillTitle() {
+			document.getElementById('productTitle').setAttribute("title", document.getElementById("productTitle").innerHTML);
+			// document.getElementById("productTitle")[index].title = 
+		// 	var name = document.getElementById('productTitle').querySelectorAll(".title");
+		// 	name[index].title = "document.getElementById('productTitle').innerHTML";
+		// }
 	</script>
 </head>
 
 <body>
 	<nav class="header">
 		<div class="col-sm-2" style="margin-top: 23px;">
-			<img src="./img" alt="logo">
+			<img src="./img/ticon.icon" alt="logo">
 		</div>
 		<div class="col-sm-5"></div>
 		<span class="col-sm-5 rightN " style="margin-top:23px; ">
@@ -282,7 +284,7 @@
 			
 		</span>
 	</nav>
-	<nav class="mypanel" data-spy="affix" data-offset-top="67">	
+	<nav class="mypanel" data-spy="affix" data-offset-top="68">	
 		<div class="wrapper">
 			<div class="container-fluid">
 				<div class="dropdown">
