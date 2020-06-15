@@ -46,27 +46,26 @@
 
 		.icon {
 			display: inline-block;
-			width: 23px;
 			height: auto;
 			filter: invert(30%);
 		}
 
 		.rightN img{
 			float:right;
-			width: 23px;
+			width: 21px;
  			height: auto;
-			margin-right: 33px;
+			margin-right: 31px;
 		}
 
 		.user-nav img{
  			float:right;
-			width: 23px;
+			width: 21px;
  			height: auto;
- 			margin-right: 35px;
 		}
 
 		.dropdown {
 			float: right;
+			margin-right: 13px;
 		}
 
 		.dropdown .dropbtn {
@@ -128,6 +127,7 @@
 
 		.side-menu{
 			width: 239px;
+			height: auto;
 			background-color: #Fff;
 			border-radius: 10px;
 			box-shadow: 1.4px 1.4px 4px #ededed;
@@ -196,6 +196,87 @@
 			max-width: 165px;
 		}
 
+		input[type = text]{
+			height: 40px;
+			width: 174px;
+			border-radius: 4px;
+			border: 1px solid #F3F4F5;
+			padding: 12px 13px
+		}
+
+		/* The container */ /*From w3schoosl.com*/
+		.cbReview {
+			display: block;
+			position: relative;
+			padding-left: 35px;
+			margin-bottom: 21px;
+			font-weight: 100;
+			color: #777;
+			cursor: pointer;
+			-webkit-user-select: none;
+			-moz-user-select: none;
+			-ms-user-select: none;
+			user-select: none;
+		}
+
+		/* Hide the browser's default checkbox */
+		.cbReview input {
+		  position: absolute;
+		  opacity: 0;
+		  cursor: pointer;
+		  height: 0;
+		  width: 0;
+		}
+
+		/* Create a custom checkbox */
+		.checkmark {
+		  position: absolute;
+		  top: 0;
+		  left: 0;
+		  height: 20px;
+		  width: 20px;
+		  background-color: transparent;
+		  border-radius: 5px;
+		  border:2px solid #adadad;
+		}
+
+		/* On mouse-over, add a grey background color */
+		.cbReview:hover input ~ .checkmark {
+		  background-color: #aaa;
+		}
+
+		/* When the checkbox is checked, add a blue background */
+		.cbReview input:checked ~ .checkmark {
+			border:none;
+		  	background-color: #54af4b;
+		}
+
+		/* Create the checkmark/indicator (hidden when not checked) */
+		.checkmark:after {
+		  content: "";
+		  position: absolute;
+		  display: none;
+		}
+
+		/* Show the checkmark when checked */
+		.cbReview input:checked ~ .checkmark:after {
+		  display: block;
+		}
+
+		/* Style the checkmark/indicator */
+		.cbReview .checkmark:after {
+		  left: 7px;
+		  top: 3px;
+		  width: 5px;
+		  height: 10px;
+		  border: solid white;
+		  border-width: 0 2.3px 2.3px 0;
+		  -webkit-transform: rotate(45deg);
+		  -ms-transform: rotate(45deg);
+		  transform: rotate(45deg);
+		}
+		/*end from w3schools.com*/
+
 		.footer{
 			bottom: 0;
 			left: 0;
@@ -262,34 +343,113 @@
 		// 	var name = document.getElementById('productTitle').querySelectorAll(".title");
 		// 	name[index].title = "document.getElementById('productTitle').innerHTML";
 		// }
+
+		var x, i, j, l, ll, selElmnt, a, b, c;
+		x = document.getElementsByClassName("side-menu-categories");
+		l = x.length;
+		for (i = 0; i < l; i++) {
+		  selElmnt = x[i].getElementsByTagName("select")[0];
+		  ll = selElmnt.length;
+		  /*for each element, create a new DIV that will act as the selected item:*/
+		  a = document.createElement("DIV");
+		  a.setAttribute("class", "select-selected");
+		  a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
+		  x[i].appendChild(a);
+		  /*for each element, create a new DIV that will contain the option list:*/
+		  b = document.createElement("DIV");
+		  b.setAttribute("class", "select-items select-hide");
+		  for (j = 1; j < ll; j++) {
+		    /*for each option in the original select element,
+		    create a new DIV that will act as an option item:*/
+		    c = document.createElement("DIV");
+		    c.innerHTML = selElmnt.options[j].innerHTML;
+		    c.addEventListener("click", function(e) {
+		        /*when an item is clicked, update the original select box,
+		        and the selected item:*/
+		        var y, i, k, s, h, sl, yl;
+		        s = this.parentNode.parentNode.getElementsByTagName("select")[0];
+		        sl = s.length;
+		        h = this.parentNode.previousSibling;
+		        for (i = 0; i < sl; i++) {
+		          if (s.options[i].innerHTML == this.innerHTML) {
+		            s.selectedIndex = i;
+		            h.innerHTML = this.innerHTML;
+		            y = this.parentNode.getElementsByClassName("same-as-selected");
+		            yl = y.length;
+		            for (k = 0; k < yl; k++) {
+		              y[k].removeAttribute("class");
+		            }
+		            this.setAttribute("class", "same-as-selected");
+		            break;
+		          }
+		        }
+		        h.click();
+		    });
+		    b.appendChild(c);
+		  }
+		  x[i].appendChild(b);
+		  a.addEventListener("click", function(e) {
+		      /*when the select box is clicked, close any other select boxes,
+		      and open/close the current select box:*/
+		      e.stopPropagation();
+		      closeAllSelect(this);
+		      this.nextSibling.classList.toggle("select-hide");
+		      this.classList.toggle("select-arrow-active");
+		    });
+		}
+		function closeAllSelect(elmnt) {
+		  /*a function that will close all select boxes in the document,
+		  except the current select box:*/
+		  var x, y, i, xl, yl, arrNo = [];
+		  x = document.getElementsByClassName("select-items");
+		  y = document.getElementsByClassName("select-selected");
+		  xl = x.length;
+		  yl = y.length;
+		  for (i = 0; i < yl; i++) {
+		    if (elmnt == y[i]) {
+		      arrNo.push(i)
+		    } else {
+		      y[i].classList.remove("select-arrow-active");
+		    }
+		  }
+		  for (i = 0; i < xl; i++) {
+		    if (arrNo.indexOf(i)) {
+		      x[i].classList.add("select-hide");
+		    }
+		  }
+		}
+		/*if the user clicks anywhere outside the select box,
+		then close all select boxes:*/
+		document.addEventListener("click", closeAllSelect);
 	</script>
 </head>
 
 <body>
 	<nav class="header">
+	<div class="wrapper">
 		<div class="col-sm-2" style="margin-top: 11px;">
 			<img style="height: 23; margin-left: 24px" src="./img/logo.png" alt="ShopVeniens">
-		</div>
-		<div class="col-sm-5"></div>
-		<span class="col-sm-5 rightN " style="margin-top:23px; ">
-			<span class="user-nav">
-				<a href="#"><img src="./img/social.svg" class="icon icon-user"></a>
-				<!-- Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a> -->
+		</div>	
+			<div class="col-sm-5"></div>
+			<span class="col-sm-5 rightN " style="margin-top:25px; ">
+				<span class="user-nav">
+					<a href="#"><img src="./img/social.svg" class="icon icon-user"></a>
+					<!-- Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a> -->
+				</span>
+				<div class="nav-icon">
+						<a href="#"><img src="./img/musical-instrument.svg" class="icon"></object></a><!--Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>-->
+						<a href="#"><img src="./img/envelopes.svg" class="icon"></object></a>
+						<!--Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a> -->
+						<a href="#"><img src="./img/commerce-and-shopping.svg" class="icon"></object></a><!--Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>-->
+				</div>
 			</span>
-			<div class="nav-icon">
-					<a href="#"><img src="./img/musical-instrument.svg" class="icon"></object></a><!--Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>-->
-					<a href="#"><img src="./img/envelopes.svg" class="icon"></object></a>
-					<!--Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a> -->
-					<a href="#"><img src="./img/commerce-and-shopping.svg" class="icon"></object></a><!--Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>-->
-			</div>
-			
-		</span>
+		</div>
 	</nav>
 	<nav class="mypanel" data-spy="affix" data-offset-top="69.5">	
 		<div class="wrapper">
 			<div class="container-fluid">
 				<div class="dropdown">
-					<button type="button" class="dropbtn" data-toggle="dropdown" id="sortBtn">Sort <span class="caret down" id="sortCaret"></span></button>
+					<button type="button" class="dropbtn" data-toggle="dropdown" id="sortBtn">Coming soon<span class="caret down" id="sortCaret"></span></button>
 					<!-- sub menu of dropdown btn -->
 					<ul class="dropdown-menu dropdown-menu-right">
 						<li><a href="#">test1</a></li>
@@ -298,7 +458,7 @@
 					</ul>
 				</div>
 				<div class="dropdown">
-					<button type="button" class="dropbtn" data-toggle="dropdown">2 <span class="caret down" id="sortId"></span></button>
+					<button type="button" class="dropbtn" data-toggle="dropdown">Coming soon<span class="caret down" id="sortId"></span></button>
 					<ul class="dropdown-menu dropdown-menu-right">
 						<li><a href="#">test1</a></li>
 						<li><a href="#">test1</a></li>
@@ -306,7 +466,7 @@
 					</ul>
 				</div>
 				<div class="dropdown">
-					<button type="button" class="dropbtn" data-toggle="dropdown">Test<span class="caret down" id=""></span></button>
+					<button type="button" class="dropbtn" data-toggle="dropdown">Coming soon<span class="caret down" id=""></span></button>
 
 					<ul class="dropdown-menu dropdown-menu-right">
 						<li><a href="#">test1</a></li>
@@ -320,13 +480,43 @@
 	<div class="wrapper">
 		<div class="container-fluid" style="margin-top: 50px;">
 			<div class="col-sm-2 sidenav side-menu">
-				<form>	
-					<label for="side-categories">Categories: </label><br>
-					<select name="side-filter-categories" id="side-categories">
-						<option value="default">Default </option>
-						<option value=""> </option>
-					</select>
-				</form>
+				<div class="side-menu-categories">
+					<div class="cFilter" style="margin-bottom: 9px;">
+						<label style="" for="side-categories">Categories: </label><br>
+						<select name="side-filter-categories" id="side-categories">
+							<option value="All">All</option>
+							<option value="Computer">Computer</option>
+						</select>
+					</div>
+					<div class="pFilter" style="margin-bottom: 19px;" >
+						<hr style="margin: 15px 0">
+						<label style="margin-bottom: 9px;">Harga</label>
+						<div style="margin-bottom: 13px">
+							<div class="pTitleRP" style="width: 33px; height: 40px; border-radius: 5px 0 0 5px; background-color:#F3F4F5; border-color: transparent; font-weight: 550; padding:9px 7px 15px; float: left">Rp</div>
+							<input type="text" name="pmin" placeholder="Harga minimal" style="border-radius: 0 5px 5px 0; outline: none;">
+						</div>
+						<div style="margin-bottom: 13px">
+							<div class="pTitleRP" style="width: 33px; height: 40px; border-radius: 5px 0 0 5px; background-color:#F3F4F5; border-color: transparent; font-weight: 550; padding:9px 7px 15px; float: left">Rp</div>
+							<input type="text" name="pmax" placeholder="Harga maksimal" style="border-radius: 0 5px 5px 0; outline: none;">
+						</div>
+					</div>
+					<div class="rFilter" style="margin-bottom: 9px;">
+						<hr style="margin: 15px 0">
+						<label style="margin: 9px 0;">Review</label>
+						<div>
+							<label class="cbReview">Good
+								<input type="checkbox" name="rFilter-good">
+								<span class="checkmark"></span></label>
+							<label class="cbReview">Average
+								<input type="checkbox" name="rFilter-average">
+  									<span class="checkmark"></span></label>
+							<label class="cbReview">Bad
+								<input type="checkbox" name="rFilter-bad">
+  									<span class="checkmark"></span></label>
+						</div>
+					</div>
+				
+				</div>
 			</div>
 			<div class="col-sm-9 product">
 				<div class="row">
@@ -469,13 +659,16 @@
 						</ul>
 					</div>
 				</div>
-				<div class="col-sm-5">
-					<!-- <article><b>TRACKER</b></article> -->
+				<div class="col-sm-5" style="color: #eaeaea">
+					<article><b>The other from us!</b></article>
+					<ul>
+						<li style="text-decoration:none;"><a style=" color: #eaeaea" href="https://trensiveniens.github.io/Lyricsveniens/" target="_blank">Lyricsveniens</a></li>
+					</ul>
 				</div>
-				<div class="col-sm-4" style="text-align: center; color: #ddd;">			
+				<!-- <div class="col-sm-4" style="text-align: center; color: #ddd;">			
 					<article>&copy; 2020, by <a href="https://www.instagram.com/imsyad/" target="_blank">irsyad</a></article>
 					<span>Date created: 04 May 2020 - 10 May 2020<br>Last Updated: 14 JUNE 2020<br>Bandung, Indonesia</span>
-				</div>
+				</div> -->
 			</div>
 		</div>
 	</div>
