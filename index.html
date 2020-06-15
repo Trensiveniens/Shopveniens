@@ -121,16 +121,18 @@
 		.affix + .wrapper{
 			padding-top: 29px;
 		}
+
 		.content-row{
 			margin-top: 40px;
 		}
 
 		.side-menu{
-			background-color: #fcfcfc;
+			width: 239px;
+			background-color: #Fff;
 			border-radius: 10px;
 			box-shadow: 1.4px 1.4px 4px #ededed;
 			padding-top: 15px;
-			margin:0 40px 0 12px;
+			margin:0 20px 0 12px;
 		}
 
 		.product .row{
@@ -146,7 +148,7 @@
 			border:none;
 			border-radius: 10px;
 			box-shadow: 1.4px 1.4px 4px #ddd;
-			height: 300px;
+			height: 290px;
 			width: 185px;
 		}
 
@@ -160,10 +162,10 @@
 		}		
 
 		.product .panel-footer{
-			background-color: #fafafa;
+			background-color: #fff;
 			border: none;
 			border-radius: 0 0 10px 10px;
-			height: 115px;
+			height: 107px;
 		}
 
 		.product .title{
@@ -176,16 +178,12 @@
 			white-space: nowrap;
 		}
 
-		.product #tooltip{
-
-		}
-
-		.product .desc{
+		.product .price{
 			height: 58px;
-			font-size: 1.3rem;
-			color: #777;
+			font-size: 1.4rem;
+			font-weight: bolder;
+			color: #ff2a2a;
 			overflow: hidden;
-			text-overflow: clip;
 		}
 
 		.product .panel-body{
@@ -322,132 +320,132 @@
 	<div class="wrapper">
 		<div class="container-fluid" style="margin-top: 50px;">
 			<div class="col-sm-2 sidenav side-menu">
-				<article>This is side bar</article>
-				<ul>
-					<li><a href="#">Test1</a></li>
-					<li><a href="#">Test1</a></li>
-					<li><a href="#">Test1</a></li>
-					<li><a href="#">Test1</a></li>
-				</ul>
+				<form>	
+					<label for="side-categories">Categories: </label><br>
+					<select name="side-filter-categories" id="side-categories">
+						<option value="default">Default </option>
+						<option value=""> </option>
+					</select>
+				</form>
 			</div>
 			<div class="col-sm-9 product">
 				<div class="row">
 					<div class="col-sm-3">
-						<div class="panel panel-default"><a href="#">
+						<div class="panel panel-default"><a href="./post1.html">
 							<div class="panel-body"><img src="./img/14489835_54db7f00-591f-430a-a2bc-0e696b57b36e_1080_1080.png"></div>
 							<div class="panel-footer">
-								<div class="title" id="productTitle" data-toggle="tooltip" data-placement="top" title="a">Nike 2019 ori vietnam</div>
-								<div class="desc">Lorem ipsum do Lorem ipsum doLorem ipsumsum doLorem ipsumsum doLorem ipsumsum doLorem ipsumsum doLorem ipsumsum doLorem ipsum </div>
+								<div class="title" id="productTitle" data-toggle="tooltip" data-placement="top" title="Vortex Series VX87 Modullar Keyboard">Vortex Series VX87 Modullar Keyboard</div>
+								<div class="price">Rp500.000</div>
 							</div>
 							</a>
 						</div>
 					</div>
 					<div class="col-sm-3">
-						<div class="panel panel-default"><a href="#">
-							<div class="panel-body"><img src="./img/8516120-1.jpg"></div>
-							<div class="panel-footer">
-								<div class="title" id="productTitle" data-toggle="tooltip" data-placement="top" title="">Gajah Mada X Supreme</div>
-								<div class="desc">Lorem ipsum do Lorem ipsum doLorem ipsumsum doLorem ipsumsum doLorem ipsumsum doLorem ipsumsum doLorem ipsumsum doLorem ipsum </div>
-							</div>
-							</a>
-						</div>
-					</div>
-					<div class="col-sm-3">
-						<div class="panel panel-default"><a href="#">
-							<div class="panel-body"><img src="./img/8516120-1.jpg"></div>
-							<div class="panel-footer">
-								<div class="title" id="productTitle" data-toggle="tooltip" data-placement="top" title="">Nike 2019 ori vietnam</div>
-								<div class="desc">Lorem ipsum do Lorem ipsum doLorem ipsumsum doLorem ipsumsum doLorem ipsumsum doLorem ipsumsum doLorem ipsumsum doLorem ipsum </div>
-							</div>
-							</a>
-						</div>
-					</div>
-					<div class="col-sm-3">
-						<div class="panel panel-default"><a href="#">
-							<div class="panel-body"><img src="./img/8516120-1.jpg"></div>
-							<div class="panel-footer">
-								<div class="title">Nike 2019 ori vietnam</div>
-								<div class="desc">Lorem ipsum do Lorem ipsum doLorem ipsumsum doLorem ipsumsum doLorem ipsumsum doLorem ipsumsum doLorem ipsumsum doLorem ipsum </div>
-							</div>
-							</a>
-						</div>
-					</div>
-					<div class="col-sm-3">
-						<div class="panel panel-default"><a href="#">
-							<div class="panel-body"><img src="./img/8516120-1.jpg"></div>
-							<div class="panel-footer">
-								<div class="title">Nike 2019 ori vietnam</div>
-								<div class="desc">Lorem ipsum do Lorem ipsum doLorem ipsumsum doLorem ipsumsum doLorem ipsumsum doLorem ipsumsum doLorem ipsumsum doLorem ipsum </div>
-							</div>
-							</a>
-						</div>
-					</div>
-					<div class="col-sm-3">
-						<div class="panel panel-default"><a href="#">
-							<div class="panel-body"><img src="./img/8516120-1.jpg"></div>
-							<div class="panel-footer">
-								<div class="title">Nike 2019 ori vietnam</div>
-								<div class="desc">Lorem ipsum do Lorem ipsum doLorem ipsumsum doLorem ipsumsum doLorem ipsumsum doLorem ipsumsum doLorem ipsumsum doLorem ipsum </div>
-							</div>
-							</a>
-						</div>
-					</div>
-					<div class="col-sm-3">
-						<div class="panel panel-default"><a href="#">
+						<div class="panel panel-default"><a href="./post1.html">
 							<div class="panel-body"><img src="./img/14489835_54db7f00-591f-430a-a2bc-0e696b57b36e_1080_1080.png"></div>
 							<div class="panel-footer">
-								<div class="title" id="productTitle" data-toggle="tooltip" data-placement="top" title="a">Nike 2019 ori vietnam</div>
-								<div class="desc">Lorem ipsum do Lorem ipsum doLorem ipsumsum doLorem ipsumsum doLorem ipsumsum doLorem ipsumsum doLorem ipsumsum doLorem ipsum </div>
+								<div class="title" id="productTitle" data-toggle="tooltip" data-placement="top" title="Vortex Series VX87 Modullar Keyboard">Vortex Series VX87 Modullar Keyboard</div>
+								<div class="price">Rp500.000</div>
 							</div>
 							</a>
 						</div>
 					</div>
 					<div class="col-sm-3">
-						<div class="panel panel-default"><a href="#">
-							<div class="panel-body"><img src="./img/8516120-1.jpg"></div>
+						<div class="panel panel-default"><a href="./post1.html">
+							<div class="panel-body"><img src="./img/14489835_54db7f00-591f-430a-a2bc-0e696b57b36e_1080_1080.png"></div>
 							<div class="panel-footer">
-								<div class="title" id="productTitle" data-toggle="tooltip" data-placement="top" title="">Gajah Mada X Supreme</div>
-								<div class="desc">Lorem ipsum do Lorem ipsum doLorem ipsumsum doLorem ipsumsum doLorem ipsumsum doLorem ipsumsum doLorem ipsumsum doLorem ipsum </div>
+								<div class="title" id="productTitle" data-toggle="tooltip" data-placement="top" title="Vortex Series VX87 Modullar Keyboard">Vortex Series VX87 Modullar Keyboard</div>
+								<div class="price">Rp500.000</div>
 							</div>
 							</a>
 						</div>
 					</div>
 					<div class="col-sm-3">
-						<div class="panel panel-default"><a href="#">
-							<div class="panel-body"><img src="./img/8516120-1.jpg"></div>
+						<div class="panel panel-default"><a href="./post1.html">
+							<div class="panel-body"><img src="./img/14489835_54db7f00-591f-430a-a2bc-0e696b57b36e_1080_1080.png"></div>
 							<div class="panel-footer">
-								<div class="title" id="productTitle" data-toggle="tooltip" data-placement="top" title="">Nike 2019 ori vietnam</div>
-								<div class="desc">Lorem ipsum do Lorem ipsum doLorem ipsumsum doLorem ipsumsum doLorem ipsumsum doLorem ipsumsum doLorem ipsumsum doLorem ipsum </div>
+								<div class="title" id="productTitle" data-toggle="tooltip" data-placement="top" title="Vortex Series VX87 Modullar Keyboard">Vortex Series VX87 Modullar Keyboard</div>
+								<div class="price">Rp500.000</div>
 							</div>
 							</a>
 						</div>
 					</div>
 					<div class="col-sm-3">
-						<div class="panel panel-default"><a href="#">
-							<div class="panel-body"><img src="./img/8516120-1.jpg"></div>
+						<div class="panel panel-default"><a href="./post1.html">
+							<div class="panel-body"><img src="./img/14489835_54db7f00-591f-430a-a2bc-0e696b57b36e_1080_1080.png"></div>
 							<div class="panel-footer">
-								<div class="title">Nike 2019 ori vietnam</div>
-								<div class="desc">Lorem ipsum do Lorem ipsum doLorem ipsumsum doLorem ipsumsum doLorem ipsumsum doLorem ipsumsum doLorem ipsumsum doLorem ipsum </div>
+								<div class="title" id="productTitle" data-toggle="tooltip" data-placement="top" title="Vortex Series VX87 Modullar Keyboard">Vortex Series VX87 Modullar Keyboard</div>
+								<div class="price">Rp500.000</div>
 							</div>
 							</a>
 						</div>
 					</div>
 					<div class="col-sm-3">
-						<div class="panel panel-default"><a href="#">
-							<div class="panel-body"><img src="./img/8516120-1.jpg"></div>
+						<div class="panel panel-default"><a href="./post1.html">
+							<div class="panel-body"><img src="./img/14489835_54db7f00-591f-430a-a2bc-0e696b57b36e_1080_1080.png"></div>
 							<div class="panel-footer">
-								<div class="title">Nike 2019 ori vietnam</div>
-								<div class="desc">Lorem ipsum do Lorem ipsum doLorem ipsumsum doLorem ipsumsum doLorem ipsumsum doLorem ipsumsum doLorem ipsumsum doLorem ipsum </div>
+								<div class="title" id="productTitle" data-toggle="tooltip" data-placement="top" title="Vortex Series VX87 Modullar Keyboard">Vortex Series VX87 Modullar Keyboard</div>
+								<div class="price">Rp500.000</div>
 							</div>
 							</a>
 						</div>
 					</div>
 					<div class="col-sm-3">
-						<div class="panel panel-default"><a href="#">
-							<div class="panel-body"><img src="./img/8516120-1.jpg"></div>
+						<div class="panel panel-default"><a href="./post1.html">
+							<div class="panel-body"><img src="./img/14489835_54db7f00-591f-430a-a2bc-0e696b57b36e_1080_1080.png"></div>
 							<div class="panel-footer">
-								<div class="title">Nike 2019 ori vietnam</div>
-								<div class="desc">Lorem ipsum do Lorem ipsum doLorem ipsumsum doLorem ipsumsum doLorem ipsumsum doLorem ipsumsum doLorem ipsumsum doLorem ipsum </div>
+								<div class="title" id="productTitle" data-toggle="tooltip" data-placement="top" title="Vortex Series VX87 Modullar Keyboard">Vortex Series VX87 Modullar Keyboard</div>
+								<div class="price">Rp500.000</div>
+							</div>
+							</a>
+						</div>
+					</div>
+					<div class="col-sm-3">
+						<div class="panel panel-default"><a href="./post1.html">
+							<div class="panel-body"><img src="./img/14489835_54db7f00-591f-430a-a2bc-0e696b57b36e_1080_1080.png"></div>
+							<div class="panel-footer">
+								<div class="title" id="productTitle" data-toggle="tooltip" data-placement="top" title="Vortex Series VX87 Modullar Keyboard">Vortex Series VX87 Modullar Keyboard</div>
+								<div class="price">Rp500.000</div>
+							</div>
+							</a>
+						</div>
+					</div>
+					<div class="col-sm-3">
+						<div class="panel panel-default"><a href="./post1.html">
+							<div class="panel-body"><img src="./img/14489835_54db7f00-591f-430a-a2bc-0e696b57b36e_1080_1080.png"></div>
+							<div class="panel-footer">
+								<div class="title" id="productTitle" data-toggle="tooltip" data-placement="top" title="Vortex Series VX87 Modullar Keyboard">Vortex Series VX87 Modullar Keyboard</div>
+								<div class="price">Rp500.000</div>
+							</div>
+							</a>
+						</div>
+					</div>
+					<div class="col-sm-3">
+						<div class="panel panel-default"><a href="./post1.html">
+							<div class="panel-body"><img src="./img/14489835_54db7f00-591f-430a-a2bc-0e696b57b36e_1080_1080.png"></div>
+							<div class="panel-footer">
+								<div class="title" id="productTitle" data-toggle="tooltip" data-placement="top" title="Vortex Series VX87 Modullar Keyboard">Vortex Series VX87 Modullar Keyboard</div>
+								<div class="price">Rp500.000</div>
+							</div>
+							</a>
+						</div>
+					</div>
+					<div class="col-sm-3">
+						<div class="panel panel-default"><a href="./post1.html">
+							<div class="panel-body"><img src="./img/14489835_54db7f00-591f-430a-a2bc-0e696b57b36e_1080_1080.png"></div>
+							<div class="panel-footer">
+								<div class="title" id="productTitle" data-toggle="tooltip" data-placement="top" title="Vortex Series VX87 Modullar Keyboard">Vortex Series VX87 Modullar Keyboard</div>
+								<div class="price">Rp500.000</div>
+							</div>
+							</a>
+						</div>
+					</div>
+					<div class="col-sm-3">
+						<div class="panel panel-default"><a href="./post1.html">
+							<div class="panel-body"><img src="./img/14489835_54db7f00-591f-430a-a2bc-0e696b57b36e_1080_1080.png"></div>
+							<div class="panel-footer">
+								<div class="title" id="productTitle" data-toggle="tooltip" data-placement="top" title="Vortex Series VX87 Modullar Keyboard">Vortex Series VX87 Modullar Keyboard</div>
+								<div class="price">Rp500.000</div>
 							</div>
 							</a>
 						</div>
@@ -475,7 +473,7 @@
 					<!-- <article><b>TRACKER</b></article> -->
 				</div>
 				<div class="col-sm-4" style="text-align: center; color: #ddd;">			
-					<article>&copy; 2020, by <a href="www.instagram.com/imsyad">irsyad</a></article>
+					<article>&copy; 2020, by <a href="https://www.instagram.com/imsyad/" target="_blank">irsyad</a></article>
 					<span>Date created: 04 May 2020 - 10 May 2020<br>Last Updated: 14 JUNE 2020<br>Bandung, Indonesia</span>
 				</div>
 			</div>
