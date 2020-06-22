@@ -1,0 +1,7 @@
+22-June-2020
+ (DESIGN)
+-Semua script untuk desain web sudah berjalan dengan baik (dropdown, select menu)
+-Perubahan product card
+-Perubahan dari menggunakan bootstrap pada product card menjadi custom class
+-Perubahan warna pada header, sorting nav, dan footer
+-Penyesuaian media screen (masih belum beres)
