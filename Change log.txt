@@ -5,3 +5,9 @@
 -Perubahan dari menggunakan bootstrap pada product card menjadi custom class
 -Perubahan warna pada header, sorting nav, dan footer
 -Penyesuaian media screen (masih belum beres)
+
+25 JUNE 2020
+(DESIGN)
+-@media screen sudah diperbaiki
+-removing icon di header karena dirasa tidak memiliki nilai fungsional
+-perbaikan beberapa script

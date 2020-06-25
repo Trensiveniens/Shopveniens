@@ -36,26 +36,6 @@
 			overflow: hidden;
 		}
 
-		@media screen and ( max-width: 768px) {
-			.header  .rightN{
-				display: none;
-			}
-
-			.side-menu{
-				/* display: none; */
-			}
-			
-			.product-container{
-				justify-content: space-around;
-			}
-		}
-
-		@media screen and (min-width: ) {
-			.header{
-				display: none ;
-			}
-		}
-
 		.header ul {
 			list-style-type: none;
 			margin: 0;
@@ -150,7 +130,6 @@
 
 		.product-container {
 			width: 1029px;
-			max-width: 100%;
 			display: flex;
 			margin-bottom: 40px;
 			flex-wrap: wrap;
@@ -374,6 +353,41 @@
 			background-color: #54af4b;
 			width: 100%;
 		}
+
+		@media screen and ( max-width: 768px) {
+			.header  .rightN{
+				display: none;
+			}
+
+			
+			.product-container{
+				justify-content: space-around;
+			}
+
+		}
+
+		@media screen and (max-width: 992px) {
+			.product-container{
+				max-width: 100%;
+				flex-direction: column;
+				justify-content: left;
+			}
+		}
+
+
+		@media screen and (max-width: 1170px){
+			.side-menu{
+				display: none;
+			}
+
+			.product-container{
+				justify-content: space-around;
+				/* justify-content: left; */
+				width: 1000px;
+				flex-direction: row;
+			}
+		}
+
 	</style>
 </head>
 
@@ -381,23 +395,24 @@
 	<nav class="header">
 		<div class="wrapper">
 			<div class="col-sm-2" style="margin-top: 11px;">
-				<img style="height: 23; margin-left: 24px" src="./img/logo.png" alt="ShopVeniens">
+				<a href="#">
+				<img style="height: 23; margin-left: 24px" src="./img/logo.png" alt="ShopVeniens"></a>
 			</div>
 			<div class="col-sm-5"></div>
-			<span class="col-sm-5 rightN " style="margin-top:25px; ">
+			<!-- <span class="col-sm-5 rightN " style="margin-top:25px; ">
 				<span class="user-nav">
-					<a href="#"><img src="./img/social.svg" class="icon icon-user"></a>
+					<a href="0#"><img src="./img/social.svg" class="icon icon-user"></a> -->
 					<!-- Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a> -->
-				</span>
+				<!-- </span>
 				<div class="nav-icon">
-					<a href="#"><img src="./img/musical-instrument.svg" class="icon"></object></a>
+					<a href="#0"><img src="./img/musical-instrument.svg" class="icon"></object></a> -->
 					<!--Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>-->
-					<a href="#"><img src="./img/envelopes.svg" class="icon"></object></a>
+					<!-- <a href="#0"><img src="./img/envelopes.svg" class="icon"></object></a> -->
 					<!--Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a> -->
-					<a href="#"><img src="./img/commerce-and-shopping.svg" class="icon"></object></a>
+					<!-- <a href="#0"><img src="./img/commerce-and-shopping.svg" class="icon"></object></a> -->
 					<!--Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>-->
-				</div>
-			</span>
+				<!-- </div> -->
+			<!-- </span> -->
 		</div>
 	</nav>
 	<nav class="mypanel" data-spy="affix" data-offset-top="69.5">
@@ -479,7 +494,7 @@
 			</div>
 			<div class="col-sm-9 product">
 				<div class="product-container">
-					<div class="product-box"><a href="./post1.html">
+					<div class="product-box"><a href="#0">
 							<div class="product-img-box"><img
 									src="./img/14489835_54db7f00-591f-430a-a2bc-0e696b57b36e_1080_1080.png"></div>
 							<div class="product-content">
@@ -488,7 +503,7 @@
 							</div>
 						</a>
 					</div>
-					<div class="product-box"><a href="./post1.html">
+					<div class="product-box"><a href="#0">
 							<div class="product-img-box"><img
 									src="./img/14489835_54db7f00-591f-430a-a2bc-0e696b57b36e_1080_1080.png"></div>
 							<div class="product-content">
@@ -497,7 +512,7 @@
 							</div>
 						</a>
 					</div>
-					<div class="product-box"><a href="./post1.html">
+					<div class="product-box"><a href="#0">
 							<div class="product-img-box"><img
 									src="./img/14489835_54db7f00-591f-430a-a2bc-0e696b57b36e_1080_1080.png"></div>
 							<div class="product-content">
@@ -506,7 +521,7 @@
 							</div>
 						</a>
 					</div>
-					<div class="product-box"><a href="./post1.html">
+					<div class="product-box"><a href="#0">
 							<div class="product-img-box"><img
 									src="./img/14489835_54db7f00-591f-430a-a2bc-0e696b57b36e_1080_1080.png"></div>
 							<div class="product-content">
@@ -515,7 +530,7 @@
 							</div>
 						</a>
 					</div>
-					<div class="product-box"><a href="./post1.html">
+					<div class="product-box"><a href="#0">
 							<div class="product-img-box"><img
 									src="./img/14489835_54db7f00-591f-430a-a2bc-0e696b57b36e_1080_1080.png"></div>
 							<div class="product-content">
@@ -524,7 +539,7 @@
 							</div>
 						</a>
 					</div>
-					<div class="product-box"><a href="./post1.html">
+					<div class="product-box"><a href="#0">
 							<div class="product-img-box"><img
 									src="./img/14489835_54db7f00-591f-430a-a2bc-0e696b57b36e_1080_1080.png"></div>
 							<div class="product-content">
@@ -533,7 +548,7 @@
 							</div>
 						</a>
 					</div>
-					<div class="product-box"><a href="./post1.html">
+					<div class="product-box"><a href="#0">
 							<div class="product-img-box"><img
 									src="./img/14489835_54db7f00-591f-430a-a2bc-0e696b57b36e_1080_1080.png"></div>
 							<div class="product-content">
@@ -542,7 +557,7 @@
 							</div>
 						</a>
 					</div>
-					<div class="product-box"><a href="./post1.html">
+					<div class="product-box"><a href="#0">
 							<div class="product-img-box"><img
 									src="./img/14489835_54db7f00-591f-430a-a2bc-0e696b57b36e_1080_1080.png"></div>
 							<div class="product-content">
