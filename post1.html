@@ -1,41 +1,44 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<title>Post</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<link rel="icon" href="./img/favicon.ico">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 	<style>
-
-		html{
+		html {
 			scroll-behavior: smooth;
+			margin: 0;
 		}
 
-		body{
+		body {
 			margin: 0;
 			font-family: sans-serif;
 		}
 
-		.wrapper{
+		.wrapper {
 			height: 100%;
 			margin: 0 auto;
 			width: 1349px;
+			max-width: 100%;
 		}
 
-		.header{
-			background-color: #E6E6E6;
+		.header {
+			background-color: #e7f2e6;
 			height: 70px;
 			margin: 0;
-			width: 100%;
+			overflow: hidden;
 		}
 
-		.header ul{
+		.header ul {
 			list-style-type: none;
 			margin: 0;
 		}
-		
-		.header li a{
+
+		.header li a {
 			color: black;
 			float: right;
 			text-decoration: none;
@@ -45,159 +48,366 @@
 
 		.icon {
 			display: inline-block;
-			width: 23px;
 			height: auto;
 			filter: invert(30%);
 		}
 
-		.rightN img{
-			float:right;
-			width: 23px;
- 			height: auto;
-			margin-right: 33px;
-		}
-
-		.user-nav img{
- 			float:right;
-			width: 23px;
- 			height: auto;
- 			margin-right: 35px;
-		}
-
-		.product-title{
-			color: #2a2a2a;
-			font-size: 24px;
-			font-weight: bolder;
-			margin: 0;
-			overflow: hidden;
-			padding: 0 15px;
-		}
-
-		.product-label-sm{
-			cursor: default;
-			color: #D1CAC9;
-			font-size: 15px; 
-			width: 50px;
-		}
-
-		.product-price{
-			color: #FF4D31;
-			font-size: 21px;
-			font-weight: bold;
-			margin: 0;
-		}
-
-		.lay-product.img{
+		.rightN img {
+			float: right;
+			width: 21px;
 			height: auto;
+			margin-right: 31px;
+		}
+
+		.user-nav img {
+			float: right;
+			width: 21px;
+			height: auto;
+		}
+
+		.dropdown {
+			float: right;
+			margin-right: 13px;
+		}
+
+		.dropdown .dropbtn {
+			background-color: inherit;
+			border: none;
+			color: #666;
+			cursor: pointer;
+			font-family: inherit;
+			font-size: 13px;
+			margin: 0;
+			outline: none;
+			padding: 6px;
+		}
+
+		.up {
+			-webkit-transform: rotate(-180deg);
+			transform: rotate(-180deg);
+		}
+
+		.mypanel {
+			background-color: #edf2e6;
+			height: 31px;
+		}
+
+		.affix {
+			top: 0;
+			width: 100%;
+			z-index: 999 !important;
+		}
+
+		.affix+.wrapper {
+			padding-top: 29px;
+		}
+
+		.content-row {
+			margin-top: 40px;
+		}
+
+		.side-menu {
+			width: 239px;
+			height: auto;
+			background-color: #Fff;
+			border-radius: 10px;
+			box-shadow: 1.4px 1.4px 4px #ededed;
+			padding-top: 15px;
+			margin: 0 20px 0 12px;
+		}
+
+		.product .row {
 			width: auto;
 		}
 
-		.product-img{
-			max-height: 700px;
-			height: auto;
-			width: 360px;
+		.product .col-sm-3 {
+			padding: 0 12.8px 0 0;
+			width: auto;
 		}
 
-		.line-break{
-			background-color: #e1e1e1; 
-			height: 1px;
-			margin: 17px 0;
-			width:100%; 
+		.product-container {
+			width: 1029px;
+			display: flex;
+			margin-bottom: 40px;
+			flex-wrap: wrap;
+			justify-content: flex-start;
+		}
+
+		.product-box {
+			width: 190px;
+			height: 291px;
+			margin: 15px 10px;
+			position: relative;
+			background: #333;
+			box-shadow: 0 5px 5px rgba(30, 40, 50, 0.1);
+		}
+
+		.product-box .product-img-box,
+		.product-box .product-img-box img {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		}
+
+		.product-box .product-img-box img {
+			object-fit: cover;
+			transition: 0.5s;
+		}
+
+		.product-box:hover .product-img-box img {
+			width: 100%;
+			height: 65%;
+		}
+
+		.product-box .product-content {
+			position: absolute;
+			bottom: 0;
+			width: 100%;
+			height: 45px;
+			background: #e7f2e6;
+			transition: 0.5s;
+			overflow: hidden;
+			padding: 8px;
+			box-sizing: border-box;
+		}
+
+		.product-box:hover .product-content {
+			width: 100%;
+			height: 35%;
+		}
+
+		.product-box .product-content .title {
+			height: 20px;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+			font-family: Arial, Helvetica, sans-serif;
+			margin: 0;
+			padding: 0;
+			font-size: 1.5rem;
+			font-weight: bold;
+			color: #333;
+			transition: 0.5s;
+		}
+
+		.product-box:hover .product-content .title {
+			white-space: unset;
+			height: 45px;
+		}
+
+		input[type=text] {
+			height: 40px;
+			width: 174px;
+			border-radius: 4px;
+			border: 1px solid #F3F4F5;
+			padding: 12px 13px
+		}
+
+		/* The container */
+		/*From w3schoosl.com*/
+		.cbReview {
+			display: block;
+			position: relative;
+			padding-left: 35px;
+			margin-bottom: 21px;
+			font-weight: 100;
+			color: #777;
+			cursor: pointer;
+			-webkit-user-select: none;
+			-moz-user-select: none;
+			-ms-user-select: none;
+			user-select: none;
+		}
+
+		/* Hide the browser's default checkbox */
+		.cbReview input {
+			position: absolute;
+			opacity: 0;
+			cursor: pointer;
+			height: 0;
+			width: 0;
+		}
+
+		/* Create a custom checkbox */
+		.checkmark {
+			position: absolute;
+			top: 0;
+			left: 0;
+			height: 20px;
+			width: 20px;
+			background-color: transparent;
+			border-radius: 5px;
+			border: 2px solid #adadad;
+		}
+
+		/* On mouse-over, add a grey background color */
+		.cbReview:hover input~.checkmark {
+			background-color: #aaa;
+		}
+
+		/* When the checkbox is checked, add a blue background */
+		.cbReview input:checked~.checkmark {
+			border: none;
+			background-color: #54af4b;
+		}
+
+		/* Create the checkmark/indicator (hidden when not checked) */
+		.checkmark:after {
+			content: "";
+			position: absolute;
+			display: none;
+		}
+
+		/* Show the checkmark when checked */
+		.cbReview input:checked~.checkmark:after {
+			display: block;
+		}
+
+		/* Style the checkmark/indicator */
+		.cbReview .checkmark:after {
+			left: 7px;
+			top: 3px;
+			width: 5px;
+			height: 10px;
+			border: solid white;
+			border-width: 0 2.3px 2.3px 0;
+			-webkit-transform: rotate(45deg);
+			-ms-transform: rotate(45deg);
+			transform: rotate(45deg);
 		}
 
 		/*the container must be positioned relative:*/
-.custom-select {
-  position: relative;
-  font-family: Arial;
-}
+		.custom-select {
+			position: relative;
+		}
 
-.custom-select select {
-  display: none; /*hide original SELECT element:*/
-}
+		.custom-select select {
+			display: none;
+			/*hide original SELECT element:*/
+		}
 
-.select-selected {
-  background-color: DodgerBlue;
-}
+		.select-selected {
+			background-color: #54af4b;
+		}
 
-/*style the arrow inside the select element:*/
-.select-selected:after {
-  position: absolute;
-  content: "";
-  top: 14px;
-  right: 10px;
-  width: 0;
-  height: 0;
-  border: 6px solid transparent;
-  border-color: #fff transparent transparent transparent;
-}
+		/*style the arrow inside the select element:*/
+		.select-selected:after {
+			position: absolute;
+			content: "";
+			top: 14px;
+			right: 10px;
+			width: 0;
+			height: 0;
+			border: 6px solid transparent;
+			border-color: #fff transparent transparent transparent;
+		}
 
-/*point the arrow upwards when the select box is open (active):*/
-.select-selected.select-arrow-active:after {
-  border-color: transparent transparent #fff transparent;
-  top: 7px;
-}
+		/*point the arrow upwards when the select box is open (active):*/
+		.select-selected.select-arrow-active:after {
+			border-color: transparent transparent #fff transparent;
+			top: 7px;
+		}
 
-/*style the items (options), including the selected item:*/
-.select-items div,.select-selected {
-  color: #ffffff;
-  padding: 8px 16px;
-  border: 1px solid transparent;
-  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
-  cursor: pointer;
-  user-select: none;
-}
+		/*style the items (options), including the selected item:*/
+		.select-items div,
+		.select-selected {
+			color: #ffffff;
+			padding: 8px 16px;
+			/* border: 1px solid transparent; */
+			border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+			border-radius: 3px;
+			cursor: pointer;
+			user-select: none;
+		}
 
-/*style items (options):*/
-.select-items {
-  position: absolute;
-  background-color: DodgerBlue;
-  top: 100%;
-  left: 0;
-  right: 0;
-  z-index: 99;
-}
+		/*style items (options):*/
+		.select-items {
+			position: absolute;
+			background-color: #54af4b;
+			top: 100%;
+			left: 0;
+			right: 0;
+			z-index: 99;
+		}
 
-/*hide the items when the select box is closed:*/
-.select-hide {
-  display: none;
-}
+		/*hide the items when the select box is closed:*/
+		.select-hide {
+			display: none;
+		}
 
-.select-items div:hover, .same-as-selected {
-  background-color: rgba(0, 0, 0, 0.1);
-}
+		.select-items div:hover,
+		.same-as-selected {
+			background-color: rgba(0, 0, 0, 0.1);
+		}
+
+		/*end from w3schools.com*/
+
+		.footer {
+			bottom: 0;
+			left: 0;
+			background-color: #54af4b;
+			width: 100%;
+		}
+
+		@media screen and (max-width: 768px) {
+			.header .rightN {
+				display: none;
+			}
+
+
+			.product-container {
+				justify-content: space-around;
+			}
+
+		}
+
+		@media screen and (max-width: 992px) {
+			.product-container {
+				max-width: 100%;
+				flex-direction: column;
+				justify-content: left;
+			}
+		}
+
+
+		@media screen and (max-width: 1170px) {
+			.side-menu {
+				display: none;
+			}
+
+			.product-container {
+				justify-content: space-around;
+				/* justify-content: left; */
+				width: 1000px;
+				flex-direction: row;
+			}
+		}
 	</style>
-	
 </head>
+
 <body>
 	<nav class="header">
-		<div class="col-sm-2" style="margin-top: 23px;">
-			<img src="./img" alt="logo">
-		</div>
-		<div class="col-sm-5"></div>
-		<span class="col-sm-5 rightN " style="margin-top:23px; ">
-			<span class="user-nav">
-				<a href="#"><img src="./img/social.svg" class="icon icon-user"></a>
-				<!-- Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a> -->
-			</span>
-			<div class="nav-icon">
-					<a href="#"><img src="./img/musical-instrument.svg" class="icon"></object></a><!--Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>-->
-					<a href="#"><img src="./img/envelopes.svg" class="icon"></object></a>
-					<!--Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a> -->
-					<a href="#"><img src="./img/commerce-and-shopping.svg" class="icon"></object></a><!--Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>-->
+		<div class="wrapper">
+			<div class="col-sm-2" style="margin-top: 11px;">
+				<a href="./index.html">
+				<img style="height: 23; margin-left: 24px" src="./img/logo.png" alt="ShopVeniens"></a>
 			</div>
-			
-		</span>
+			<div class="col-sm-5"></div>
+		</div>
 	</nav>
 	<div class="wrapper">
 		<div class="row">
 			<div class="container" style="margin: 50px auto 80px auto;">
-				<div class="col-sm-3 lay-product-img" style="padding: 0" >
-					<img class="product-img" src="./img/Task1.2_1A_191524014.jpg">
+				<div class="col-sm-3 lay-product-img" style="padding: 0">
+					<img class="product-img" src="./img/8516120-1.jpg">
 				</div>
 				<div class="col-sm-1"></div>
-				<div class="col-md-8" >
+				<div class="col-md-8">
 					<div class="row">
-						<h1 class="product-title">Switch CherryMX - Blue Brown Black Red - Mechanical Keyboard Cherry MX - Brown Switch.</h1>
+						<h1 class="product-title">Switch CherryMX - Blue Brown Black Red - Mechanical Keyboard Cherry MX
+							- Brown Switch.</h1>
 					</div>
 					<hr class="line-break">
 					<div class="row" style="padding: 0 15px;">
@@ -214,133 +424,79 @@
 						<dt>
 							<p disabled class="product-label-sm">Deskripsi</p>
 						</dt>
-						<dd >
+						<dd>
 							<div></div>
-							<p class="product-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							<p class="product-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+								do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+								cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 						</dd>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-	<nav class="navbar navbar-inverese" style="background-color: #333; border-radius: 0;">
+	<!-- <nav class="navbar navbar-inverese" style="background-color: #333; border-radius: 0;">
 		<div class="container-fluid">
 			<div class="navbar-header">
-					<ul class="nav navbar-nav">
-						<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Grouping
-						<span class="caret"></span></a>
+				<ul class="nav navbar-nav">
+					<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Grouping
+							<span class="caret"></span></a>
 						<ul class="dropdown-menu">
 							<li><a href="#">Poisitive</a></li>
 							<li><a href="#">Negative</a></li>
 							<li><a href="#">Neutral</a></li>
 						</ul>
-						</li>
-					</ul>
+					</li>
+				</ul>
 			</div>
 		</div>
+	</nav> -->
 
-		<div class="custom-select" style="width:200px;">
-  <select>
-    <option value="0">Select car:</option>
-    <option value="1">Audi</option>
-    <option value="2">BMW</option>
-    <option value="3">Citroen</option>
-    <option value="4">Ford</option>
-    <option value="5">Honda</option>
-    <option value="6">Jaguar</option>
-    <option value="7">Land Rover</option>
-    <option value="8">Mercedes</option>
-    <option value="9">Mini</option>
-    <option value="10">Nissan</option>
-    <option value="11">Toyota</option>
-    <option value="12">Volvo</option>
-  </select>
-</div>
-	</nav>
+	<div class="comment-sec">
+	</div>
+	<div class="footer">
+		<div class="wrapper">
+			<div class="container-fluid" style="padding-top: 25px;">
+				<div class="col-sm-3">
+					<div class="sidenav" style="color: #eaeaea">
+						<article><B>KELOMPOK - </B></article>
+						<ul style="list-style: decimal; font-size: 1.2rem;">
+							<li>Leader : I Gusti Made</li>
+							<li>Analyst: Muhammad Hasbi I</li>
+							<li>Developer: Gemintang Sangkaji F</li>
+							<li>Developer: Marcell Ivaldri R</li>
+							<li>Designer: Irsyad Muhammad</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-sm-5" style="color: #eaeaea">
+					<article><b>The other from us!</b></article>
+					<ul>
+						<li style="text-decoration:none;"><a style=" color: #eaeaea"
+								href="https://trensiveniens.github.io/Lyricsveniens/" target="_blank">Lyricsveniens</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
 	<script type="text/javascript">
-		var x, i, j, l, ll, selElmnt, a, b, c;
-/*look for any elements with the class "custom-select":*/
-x = document.getElementsByClassName("custom-select");
-l = x.length;
-for (i = 0; i < l; i++) {
-  selElmnt = x[i].getElementsByTagName("select")[0];
-  ll = selElmnt.length;
-  /*for each element, create a new DIV that will act as the selected item:*/
-  a = document.createElement("DIV");
-  a.setAttribute("class", "select-selected");
-  a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
-  x[i].appendChild(a);
-  /*for each element, create a new DIV that will contain the option list:*/
-  b = document.createElement("DIV");
-  b.setAttribute("class", "select-items select-hide");
-  for (j = 1; j < ll; j++) {
-    /*for each option in the original select element,
-    create a new DIV that will act as an option item:*/
-    c = document.createElement("DIV");
-    c.innerHTML = selElmnt.options[j].innerHTML;
-    c.addEventListener("click", function(e) {
-        /*when an item is clicked, update the original select box,
-        and the selected item:*/
-        var y, i, k, s, h, sl, yl;
-        s = this.parentNode.parentNode.getElementsByTagName("select")[0];
-        sl = s.length;
-        h = this.parentNode.previousSibling;
-        for (i = 0; i < sl; i++) {
-          if (s.options[i].innerHTML == this.innerHTML) {
-            s.selectedIndex = i;
-            h.innerHTML = this.innerHTML;
-            y = this.parentNode.getElementsByClassName("same-as-selected");
-            yl = y.length;
-            for (k = 0; k < yl; k++) {
-              y[k].removeAttribute("class");
+		var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                var data=JSON.parse(xhttp.responseText);
+                data.forEach(function(element) {
+                    document.getElementById("comment-sec").innerHTML +="<div class='test'>" + element["text"] + "</div>";
+                });
             }
-            this.setAttribute("class", "same-as-selected");
-            break;
-          }
-        }
-        h.click();
-    });
-    b.appendChild(c);
-  }
-  x[i].appendChild(b);
-  a.addEventListener("click", function(e) {
-      /*when the select box is clicked, close any other select boxes,
-      and open/close the current select box:*/
-      e.stopPropagation();
-      closeAllSelect(this);
-      this.nextSibling.classList.toggle("select-hide");
-      this.classList.toggle("select-arrow-active");
-    });
-}
-function closeAllSelect(elmnt) {
-  /*a function that will close all select boxes in the document,
-  except the current select box:*/
-  var x, y, i, xl, yl, arrNo = [];
-  x = document.getElementsByClassName("select-items");
-  y = document.getElementsByClassName("select-selected");
-  xl = x.length;
-  yl = y.length;
-  for (i = 0; i < yl; i++) {
-    if (elmnt == y[i]) {
-      arrNo.push(i)
-    } else {
-      y[i].classList.remove("select-arrow-active");
-    }
-  }
-  for (i = 0; i < xl; i++) {
-    if (arrNo.indexOf(i)) {
-      x[i].classList.add("select-hide");
-    }
-  }
-}
-/*if the user clicks anywhere outside the select box,
-then close all select boxes:*/
-document.addEventListener("click", closeAllSelect);
+        };
+        xhttp.open("GET", "toktokped1.json", true);
+        xhttp.send();
 	</script>
 </body>
+
 </html>
