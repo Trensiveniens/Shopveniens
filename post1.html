@@ -490,11 +490,11 @@
             if (this.readyState == 4 && this.status == 200) {
                 var data=JSON.parse(xhttp.responseText);
                 data.forEach(function(element) {
-                    document.getElementById("comment-sec").innerHTML +="<div class='test'>" + element["text"] + "</div>";
+                    document.getElementById("comment-sec").innerHTML += /*"<div class='test'>" +*/ element["text"] /*+ "</div>"*/;
                 });
             }
         };
-        xhttp.open("GET", "toktokped1.json", true);
+        xhttp.open("GET", "./db/toktokped1.json", true);
         xhttp.send();
 	</script>
 </body>
