@@ -456,8 +456,8 @@
 		</div>
 	</nav> -->
 
-	<div class="comment-sec">
-	</div>
+	<p class="comment-sec">
+	</p>
 	<div class="footer">
 		<div class="wrapper">
 			<div class="container-fluid" style="padding-top: 25px;">
@@ -490,11 +490,11 @@
             if (this.readyState == 4 && this.status == 200) {
                 var data=JSON.parse(xhttp.responseText);
                 data.forEach(function(element) {
-                    document.getElementById("comment-sec").innerHTML += /*"<div class='test'>" +*/ element["text"] /*+ "</div>"*/;
+                    document.getElementById("comment-sec").innerHTML += /*"<div class='test'>" +*/ element["pesan"]["text"] /*+ "</div>"*/;
                 });
             }
         };
-        xhttp.open("GET", "./db/toktokped1.json", true);
+        xhttp.open("GET", "toktokped1.json", true);
         xhttp.send();
 	</script>
 </body>
