@@ -23,3 +23,7 @@
 -index.html sudah bisa menampilkan gambar dan judul  menggunakan data  hasil scarping
 -beberapa produk tidak memiliki nama produknya (masalah saat scrapig)
 -pembuatan halaman untuk setiap post belum dilakukan
+
+28 JUNE 2020
+(DESIGN)
+-Menghapus code yang tidak terpanggil/dipakai.

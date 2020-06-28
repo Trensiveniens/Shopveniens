@@ -1,10 +1,8 @@
 <!DOCTYPE html>
 <html>
-
 <head>
 	<title>ShopVeniens</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<!-- <meta name="viewport" content="width=device-width, initial-scale=.5, maximum-scale=12.0, minimum-scale=.25, user-scalable=yes"/> -->
 	<link rel="icon" href="./img/favicon.ico">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -404,23 +402,13 @@
 		<div class="wrapper">
 			<div class="container-fluid">
 				<div class="sortDropDown dropdown">
-					<button type="button" class="dropbtn" data-toggle="dropdown">Sort<span class="caret down"
+					<button type="button" class="dropbtn" data-toggle="dropdown">Sort By<span class="caret down"
 							id="sortCaret"></span></button>
 					<!-- sub menu of dropdown btn -->
 					<ul class="dropdown-menu dropdown-menu-right">
-						<li><a href="#0">test1</a></li>
-						<li><a href="#0">test1</a></li>
-						<li><a href="#0">test1</a></li>
-					</ul>
-				</div>
-				<div class="anotherDropDown dropdown">
-					<button type="button" class="dropbtn" data-toggle="dropdown">Coming soon<span class="caret down"
-							id="anotherCaret"></span></button>
-
-					<ul class="dropdown-menu dropdown-menu-right">
-						<li><a href="#0">test1</a></li>
-						<li><a href="#0">test1</a></li>
-						<li><a href="#0">test1</a></li>
+						<li><a href="#0">Name</a></li>
+						<li><a href="#0">Price</a></li>
+						<li><a href="#0">Rating</a></li>
 					</ul>
 				</div>
 			</div>
@@ -435,10 +423,8 @@
 						<div class="custom-select">
 							<select name="side-filter-categories" id="side-categories" style="width: 209px;">
 								<option value="0">All</option>
-								<option value="1">Computer</option>
-								<option value="2">Cosmetic</option>
-								<option value="3">Keyboard</option>
-								<option value="4">Laptop</option>
+								<option value="1">Shoes</option>
+								<option value="2">Sandal</option>
 							</select>
 						</div>
 					</div>
@@ -523,37 +509,7 @@
 			$(".sortDropDown").on("show.bs.dropdown", function () {
 				$("#sortCaret").toggleClass('down up');
 			});
-
-			//dropdown for anotherdropdown
-			//close dropdown
-			$(".anotherDropDown").on("hide.bs.dropdown", function () {
-				$("#anotherCaret").toggleClass('down up');
-			});
-			//open dropdown
-			$(".anotherDropDown").on("show.bs.dropdown", function () {
-				$("#anotherCaret").toggleClass('down up');
-			});
 		});
-
-
-		//function tooltip
-		//w3school.com
-		$(document).ready(function () {
-			fillTitle();
-			$('[data-toggle="tooltip"]').tooltip({
-				delay: { "show": 500, "hide": 100 },
-			});
-		});
-
-
-		//irsyad muhammad
-		//function fill attribute title in product title class
-		function fillTitle() {
-			var node = document.getElementsByClassName("title").length;
-			for (i = 0; i < node; i++) {
-				document.getElementsByClassName("title")[i].setAttribute("title", document.getElementsByClassName("title")[i].innerHTML);
-			}
-		}
 
 		/*author: W3Schools.com*/
 		var x, i, j, l, ll, selElmnt, a, b, c;
@@ -643,7 +599,7 @@
             if (this.readyState == 4 && this.status == 200) {
                 var data=JSON.parse(xhttp.responseText);
                 data.forEach(function(element) {
-                    document.getElementById("comment-sec").innerHTML += "<div class='product-box'><a href='#0'> <div class='product-img-box'><img src='"+ element["image"] +"'></div> <div class='product-content'> <div class='title' onclick='filltitle()' id='productTitle' data-toggle='tooltip' data-placement='bottom' title='  '>"+element["Product"]+"</div> </div> </a> </div>";
+                    document.getElementById("comment-sec").innerHTML += "<div class='product-box'><a href='#0'> <div class='product-img-box'><img src='"+ element["image"] +"'></div> <div class='product-content'> <div class='title' id='productTitle'>"+element["Product"]+"</div> </div> </a> </div>";
                 });
             }
         };
@@ -651,5 +607,4 @@
         xhttp.send();
 	</script>
 </body>
-
 </html>
