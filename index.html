@@ -21,14 +21,14 @@
 	<style>
 		
 	</style>
-	<body class="is-preload" id="myPage" data-spy="scroll" data-target="#menu" data-offset="50">
+	<body class="is-preload" style="background-color:#F8FFF8" id="myPage" data-spy="scroll" data-target="#menu" data-offset="50">
 
 
   </div></div>
 
 
 		<!-- Header -->
-			<header id="header" style="background-color:#e7f2e6">	
+			<header id="header" style="background-color:#3F4A3C">	
 			<nav class="header">
 				<div class="wrapper">
 					<div class="col-sm-2" style="margin-top: 11px;">
@@ -40,18 +40,18 @@
 			</nav>
 
 				<nav>
-					<a style="color: black;" href="#menu">Menu</a>
+					<a style="color: #A2AF9F;" href="#menu">Menu</a>
 				</nav>
 			</header>
 
 		<!-- Nav -->
-			<nav class="daftar" id="menu" style="background-color:#e7f2e6 ;">
+			<nav class="daftar" id="menu" style="background-color:#A2AF9F ;">
 				<ul class="links">
-					<li><a style="color: black;" href="index.html">Home</a></li>
-					<li><a style="color: black;" href="#CIKAN">REVIEW STATIC</a></li>
-					<li><a style="color: black;" href="#cta">ABOUTUS</a></li>
-					<li><a style="color: black;" href="#bisa">OUT TEAM MEMBERS</a></li>
-					<li><a style="color: black;" href="#footer">FAQ</a></li>
+					<li><a style="color: white;" href="index.html">Home</a></li>
+					<li><a style="color: white;" href="#CIKAN">Statistic</a></li>
+					<li><a style="color: white;" href="#cta">About Us</a></li>
+					<li><a style="color: white;" href="#bisa">Team Members</a></li>
+					<li><a style="color: white;" href="#footer">Contact Us</a></li>
 					
 
 				</ul>
@@ -61,17 +61,17 @@
 			<section id="banner">
 				<div class="inner">
 					<h1>Shopveniens</h1>
-					<p>Shopping with precise review of a product you were loooking for<br />
+					<p>-Shopping with precise review of a product you were loooking for-<br />-We review your products statistically-</p>
 				</div>
 				<video autoplay loop muted playsinline src=".//images/videoplayback.mp4" style="background-color: #333;"></video>
+
 			</section>
-	<header class="special">
-						<h2 id="CIKAN">Review Statistic</h2>
-						<p>Shopveniens will rate reviews from products</p>
-					</header>
-		<!-- Chart -->
+
+
+<!-- Script Chart -->
 	
 <style>
+
 #chartdiv {
   width: 100%;
   height: 500px;
@@ -82,6 +82,7 @@
 <!-- Resources -->
 <script src="https://www.amcharts.com/lib/4/core.js"></script>
 <script src="https://www.amcharts.com/lib/4/charts.js"></script>
+<script src="https://www.amcharts.com/lib/4/themes/dataviz.js"></script>
 <script src="https://www.amcharts.com/lib/4/themes/animated.js"></script>
 
 <!-- Chart code -->
@@ -89,6 +90,7 @@
 am4core.ready(function() {
 
 // Themes begin
+am4core.useTheme(am4themes_dataviz);
 am4core.useTheme(am4themes_animated);
 // Themes end
 
@@ -139,50 +141,120 @@ hoverShadow.blur = 5;
 chart.legend = new am4charts.Legend();
 
 chart.data = [{
-  "country": "Neutral",
-  "litres": 20
-},{
   "country": "Positive",
   "litres": 58
-}, {
+},{
   "country": "Negative",
   "litres": 22
+}, {
+  "country": "Neutral",
+  "litres": 20
+
 }];
 
 }); // end am4core.ready()
-$(document).ready(function(){
-  // Initialize Tooltip
-  $('[data-toggle="tooltip"]').tooltip(); 
-  
-  // Add smooth scrolling to all links in navbar + footer link
-  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
-
-    // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== "") {
-
-      // Prevent default anchor click behavior
-      event.preventDefault();
-
-      // Store hash
-      var hash = this.hash;
-
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 900, function(){
-   
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
-      });
-    } // End if
-  });
-})
 </script>
 
-<!-- HTML -->
-<div id="chartdiv"></div>	
 
+<style>
+#chartdiv1 {
+  width: 100%;
+  height: 500px;
+}
+</style>
+
+<!-- Chart code -->
+<script>
+am4core.ready(function() {
+
+// Themes begin
+am4core.useTheme(am4themes_dataviz);
+am4core.useTheme(am4themes_animated);
+// Themes end
+
+// Create chart instance
+var chart = am4core.create("chartdiv1", am4charts.XYChart);
+chart.scrollbarX = new am4core.Scrollbar();
+
+// Add data
+chart.data = [{
+  "country": "Positive",
+  "visits": 58
+}, {
+  "country": "Negative",
+  "visits": 22
+}, {
+  "country": "Neutral",
+  "visits": 20
+}];
+
+// Create axes
+var categoryAxis = chart.xAxes.push(new am4charts.CategoryAxis());
+categoryAxis.dataFields.category = "country";
+categoryAxis.renderer.grid.template.location = 0;
+categoryAxis.renderer.minGridDistance = 30;
+categoryAxis.renderer.labels.template.horizontalCenter = "right";
+categoryAxis.renderer.labels.template.verticalCenter = "middle";
+categoryAxis.renderer.labels.template.rotation = 270;
+categoryAxis.tooltip.disabled = true;
+categoryAxis.renderer.minHeight = 110;
+
+var valueAxis = chart.yAxes.push(new am4charts.ValueAxis());
+valueAxis.renderer.minWidth = 50;
+
+// Create series
+var series = chart.series.push(new am4charts.ColumnSeries());
+series.sequencedInterpolation = true;
+series.dataFields.valueY = "visits";
+series.dataFields.categoryX = "country";
+series.tooltipText = "[{categoryX}: bold]{valueY}[/]";
+series.columns.template.strokeWidth = 0;
+
+series.tooltip.pointerOrientation = "vertical";
+
+series.columns.template.column.cornerRadiusTopLeft = 10;
+series.columns.template.column.cornerRadiusTopRight = 10;
+series.columns.template.column.fillOpacity = 0.8;
+
+// on hover, make corner radiuses bigger
+var hoverState = series.columns.template.column.states.create("hover");
+hoverState.properties.cornerRadiusTopLeft = 0;
+hoverState.properties.cornerRadiusTopRight = 0;
+hoverState.properties.fillOpacity = 1;
+
+series.columns.template.adapter.add("fill", function(fill, target) {
+  return chart.colors.getIndex(target.dataItem.index);
+});
+
+// Cursor
+chart.cursor = new am4charts.XYCursor();
+
+}); // end am4core.ready()
+</script>
+
+
+
+
+
+
+<!-- HTML -->
+<br><br><br><br><br><br>
+<header class="special">
+						<h2>BAR Chart Statistic</h2>
+						<p>The chart is based on a product from tokopedia that we scraped in the review content which then we labels them by the positive, negative, and neutral category
+the chart above that we used is from amChart Library bar and pie/dounuts type.</p>
+					</header>
+<div id="chartdiv1"></div>	
+
+<br><br><br><br>
+<header class="special">
+						<h2>DOUNUT Chart Statistic</h2>
+						<p>The chart is based on a product from tokopedia that we scraped in the review content which then we labels them by the positive, negative, and neutral category
+the chart above that we used is from amChart Library bar and pie/dounuts type.</p>
+					</header>
+<div id="chartdiv"></div>
+
+<br><br><br><br>
 		<!-- CTA -->
 			<section id="cta" class="wrapper">
 				<div class="inner">
@@ -286,30 +358,30 @@ $(document).ready(function(){
 			</section>
 
 		<!-- Footer -->
-			<footer id="footer" style="background-color:#e7f2e6; ;">
-				<div class="inner" style="color: black;">
+			<footer id="footer" style="background-color:#323B31; ;">
+				<div class="inner" style="color: white;">
 					<div class="content">
 						<section>
-							<h3 style="color: black;">Trensinviniens</h3>
-							<p style="color: black;">bla bla bla </p>
+							<h3 style="color: #E7F2E6;">Trensinviniens</h3>
+							<p style="color: #E7F2E6;">bla bla bla </p>
 						</section>
 						<section>
-							<h4 style="color: black;">CONTACT US</h4>
+							<h4 style="color: #E7F2E6;">CONTACT US</h4>
 							<ul class="alt">
-								<li><a style="color: black;" href="#">gemintang.sangkaji.tif419@polban.ac.id</a></li>
-								<li><a style="color: black;" href="#">i.gusti.tif419@polban.ac.id</a></li>
-								<li><a style="color: black;" href="#">irsyad.muhammad.tif419@polban.ac.id</a></li>
-								<li><a style="color: black;" href="#">marcell.ilvadri.tif419@polban.ac.id</a></li>
-								<li><a style="color: black;" href="#">muhamad.hasbi.tif419@polban.ac.id</a></li>
+								<li><a style="color: #E7F2E6;" href="#">gemintang.sangkaji.tif419@polban.ac.id</a></li>
+								<li><a style="color: #E7F2E6;" href="#">i.gusti.tif419@polban.ac.id</a></li>
+								<li><a style="color: #E7F2E6;" href="#">irsyad.muhammad.tif419@polban.ac.id</a></li>
+								<li><a style="color: #E7F2E6;" href="#">marcell.ivaldri.tif419@polban.ac.id</a></li>
+								<li><a style="color: #E7F2E6;" href="#">muhamad.hasbi.tif419@polban.ac.id</a></li>
 							</ul>
 						</section>
 						<section style="color: black;">
-							<h4 style="color: black;">SOSIALMEDIA</h4>
+							<h4 style="color: #E7F2E6;">SOSIALMEDIA</h4>
 							<ul class="plain" style="color: black;">
-								<li><a style="color: black;" href="#"><i class="icon fa-twitter">&nbsp;</i>Twitter</a></li>
-								<li><a style="color: black;" href="#"><i class="icon fa-facebook">&nbsp;</i>Facebook</a></li>
-								<li><a style="color: black;" href="#"><i class="icon fa-instagram">&nbsp;</i>Instagram</a></li>
-								<li><a style="color: black;" href="https://github.com/Trensiveniens/Shopveniens"><i class="icon fa-github">&nbsp;</i>Github</a></li>
+								<li><a style="color: #E7F2E6;" href="#"><i class="icon fa-twitter">&nbsp;</i>Twitter</a></li>
+								<li><a style="color: #E7F2E6;" href="#"><i class="icon fa-facebook">&nbsp;</i>Facebook</a></li>
+								<li><a style="color: #E7F2E6;" href="#"><i class="icon fa-instagram">&nbsp;</i>Instagram</a></li>
+								<li><a style="color: #E7F2E6;" href="https://github.com/Trensiveniens/Shopveniens"><i class="icon fa-github">&nbsp;</i>Github</a></li>
 							</ul>
 						</section>
 					</div>

@@ -21,7 +21,7 @@ html {
   box-sizing: inherit; }
 
 body {
-  background: #ffffff; }
+  background: #DDF8D7; }
   body.is-preload *, body.is-preload *:before, body.is-preload *:after {
     -moz-animation: none !important;
     -webkit-animation: none !important;
@@ -1822,7 +1822,7 @@ ul.icons {
   border-top: 0;
   display: -ms-flexbox;
   height: 35rem !important;
-  min-height: 35rem;
+  min-height: 49rem;
   overflow: hidden;
   position: relative;
   text-align: center;
@@ -2806,7 +2806,7 @@ body {
       text-transform: none !important; }
     #menu .close:before {
       content: '\f00d';
-      font-size: 1.25rem; }
+      font-size: 3.25rem; }
     #menu .close:hover {
       color: #ffffff; }
     @media screen and (max-width: 736px) {
