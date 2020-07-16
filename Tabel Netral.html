@@ -48,7 +48,7 @@
 			<nav class="daftar" id="menu" style="background-color:#A2AF9F ;">
 				<ul class="links">
 					<li><a style="color: white;" href="index.html">Home</a></li>
-					<li><a style="color: white;" href="#CIKAN">Statistic</a></li>
+					<li><a style="color: white;" href="index.html#CIKAN">Statistic</a></li>
 					<li><a style="color: white;" href="#cta">About Us</a></li>
 					<li><a style="color: white;" href="#bisa">Team Members</a></li>
 					<li><a style="color: white;" href="#footer">Contact Us</a></li>
@@ -149,10 +149,10 @@ chart.data = [{
   "litres": 58
 },{
   "country": "Negative",
-  "litres": 29
+  "litres": 22
 }, {
   "country": "Neutral",
-  "litres": 13
+  "litres": 20
 
 }];
 
@@ -186,10 +186,10 @@ chart.data = [{
   "visits": 58
 }, {
   "country": "Negative",
-  "visits": 29
+  "visits": 22
 }, {
   "country": "Neutral",
-  "visits": 13
+  "visits": 20
 }];
 
 // Create axes
@@ -240,35 +240,119 @@ chart.cursor = new am4charts.XYCursor();
 
 
 
+	
+	
+	<table id="myTable">
+	  <tr>
+		<style>
+			table {
+			  border-spacing: 0;
+			  width: 100%;
+			  border: 1px solid #ddd;
+			}
+			
+			th, td {
+			  text-align: left;
+			  padding: 16px;
+			}
+			
+			tr:nth-child(even) {
+			  background-color: #f2f2f2
+			}
+			</style>
 
-<br>
-<header class="special" id="CIKAN">
-						<h2>BAR Chart Statistic</h2>
-						<p>The chart is based on a product from tokopedia that we scraped in the review content which then we labels them by the positive, negative, and neutral category
-the chart above that we used is from amChart Library bar and pie/dounuts type.</p>
-					</header>
-<div id="chartdiv1"></div>	
-
-
-<header class="special">
-						<h2>DOUNUT Chart Statistic</h2>
-						<p>The chart is based on a product from tokopedia that we scraped in the review content which then we labels them by the positive, negative, and neutral category
-the chart above that we used is from amChart Library bar and pie/dounuts type.</p>
-					</header>
-<div id="chartdiv"></div>
+			
+			
+			
+			<table id="myTable">
+			  <tr>
+				<th>No</th>
+				<th>Nama Barang</th>
+				<th>Komentar</th>
+			  </tr>
+			  <tr>
+				<th>1</th>
+				<td>Tempered Glass</td>
+				<td>Mantapp, tapi ternyata gak fully covered pinggirannya, tp its ok</td>
+              </tr>
+              <tr>
+				<th>2</th>
+				<td>Headset Oppo</td>
+				<td>Lumayan bagus sesuai dengan harganya.</td>
+			  </tr>
+			  <tr>
+				<th>3</th>
+				<td>Headset Oppo</td>
+				<td>Mic nya tidak berfungsi 😭. Packing aman & rapi. Pengiriman cepat, gratis lagi. Recomended seller.</td>
+              </tr>
+			  <tr>
+				<th>4</th>
+				<td>Headset Oppo</td>
+				<td>Lumayan ajib ...sesuai harganya</td>
+              </tr>
+              <tr>
+				<th>5</th>
+				<td>Alfreds Futterkiste</td>
+				<td>Belum dicobain sih mudah2an berfungsi semua. Saran saja utk pengemasan untuk lebih diperbaiki lagi padahal udh bubble wrap karena mau dijual lagi. Semoga sukses.</td>
+              </tr>
+              <tr>
+				<th>6</th>
+				<td>Alfreds Futterkiste</td>
+				<td>😀</td>
+			  </tr>
+			  <tr>
+				<th>7</th>
+				<td>Koniglich Essen</td>
+				<td>Produk original, expired sesuai deskripsi, harga bersaing, untuk rasa belum dicoba jadi gak bisa komen</td>
+			  </tr>
+			  <tr>
+				<th>8</th>
+				<td>Magazzini Alimentari Riuniti</td>
+				<td>belum coba yang rasa ini, tapi kuah tonkotsu harusnya tidak diragukan lagi</td>
+			  </tr>
+			  <tr>
+				<th>9</th> 
+				<td>Paris specialites</td>
+				<td>Packaging lmyn rapi lah... Dan baru tau kalo hp ini punya lampu indikator yang tembus pandang... Semoga aja g palsu atau daur ulang</td>
+			  </tr>
+			  <tr>
+				<th>10</th>  
+				<td>Island Trading</td>
+				<td> </td>
+			  </tr>
+			  <tr>
+                <th>11</th>  
+				<td>Laughing Bacchus Winecellars</td>
+				<td> </td>
+              </tr>
+                <th>12</th>  
+                <td>Laughing Bacchus Winecellars</td>
+                <td> </td>
+              </tr>  
+              <th>13</th>  
+              <td>Laughing Bacchus Winecellars</td>
+              <td> </td>
+              </tr>
+			</table>
+			
+		
+	
 
 
 		<!-- CTA -->
 				<div class="tabel" style="margin: 10px; grid-gap: 1fr 1fr 1fr;">
-					<center><button style="margin: 10px;">
-						<a href="Tabel Positif.html#myTable" style="text-decoration: none">Positive</a>
-					</button>
-					<button>
-						<a href="Tabel Negatif.html#myTable" style="text-decoration: none">Negative</a>
-					</button>
-					<button style="margin: 10px;">
-						<a href="Tabel Netral.html#myTable" style="text-decoration: none">Neutral</a>
-					</button></center>	
+					<center>
+					    <button style="margin: 10px;">
+					    	<a href="Tabel Positif.html#myTable" style="text-decoration: none">Positive</a>
+                        </button>
+                        
+				        <button>
+				    		<a href="index.html#CIKAN" style="text-decoration: none">Back To Statistic</a>
+                        </button>
+				        <button style="margin: 10px;">
+				    		<a href="Tabel Negatif.html#myTable" style="text-decoration: none">Negative</a>
+                        </button>
+                    </center>	
 				</div>
 			<section id="cta" class="wrapper">
 				<div class="inner">

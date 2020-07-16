@@ -1,0 +1,2744 @@
+﻿							Tempered Glass
+  {
+    "completions": [
+      {
+        "created_at": 1593423182,
+        "id": 1,
+        "lead_time": 9.295,
+        "result": [
+          {
+            "from_name": "sentiment",
+            "id": "SOQrght_cx",
+            "to_name": "text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "Neutral"
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "data": {
+      "pesan": 1,
+      "text": "Mantapp, tapi ternyata gak fully covered pinggirannya, tp its ok"  tempered glass
+    },
+    "id": 0
+  },
+{
+    "completions": [
+      {
+        "created_at": 1593423195,
+        "id": 1001,
+        "lead_time": 10.022,
+        "result": [
+          {
+            "from_name": "sentiment",
+            "id": "VubPbPw2If",
+            "to_name": "text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "Negative"
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "data": {
+      "pesan": 2,
+      "text": "Kecewa karena productnya ada bingkainya, jadi layar kelihatan kecil.. not full enough to cover my phone." tempered glass
+    },
+    "id": 1
+  },
+ {
+    "completions": [
+      {
+        "created_at": 1593423219,
+        "id": 2001,
+        "lead_time": 20.314,
+        "result": [
+          {
+            "from_name": "sentiment",
+            "id": "x_I7D1MwIc",
+            "to_name": "text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "Positive"
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "data": {
+      "pesan": 3,
+      "text": "Masangnya cepat dan gampang banget. Semoga awet. Pengiriman cepat."
+    },
+    "id": 2
+  }, 
+{
+    "completions": [
+      {
+        "created_at": 1593423230,
+        "id": 3001,
+        "lead_time": 6.696,
+        "result": [
+          {
+            "from_name": "sentiment",
+            "id": "J7aJg0rD_D",
+            "to_name": "text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "Positive"
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "data": {
+      "pesan": 4,
+      "text": "Seperti biasa sudah berapa kali belanja disini..Tempered Glass sangat berkualitas pas dengan layar hape..pengiriman dan respond super duper cepat..produk di bungkus rapi dan aman..TOP Markotop dah..Sangat Puas! Thanks Gan"
+    },
+    "id": 3
+  },
+  {
+    "completions": [
+      {
+        "created_at": 1593423299,
+        "id": 10001,
+        "lead_time": 5.029,
+        "result": [
+          {
+            "from_name": "sentiment",
+            "id": "MMYQE9ND_e",
+            "to_name": "text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "Positive"
+              ]
+            }
+          }
+        ]
+      }
+    ],
+  {
+    "completions": [
+      {
+        "created_at": 1593423238,
+        "id": 4001,
+        "lead_time": 4.418,
+        "result": [
+          {
+            "from_name": "sentiment",
+            "id": "u5WSTiQ2Y0",
+            "to_name": "text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "Positive"
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "data": {
+      "pesan": 5,
+      "text": "Fast response pembelian kesekian kalinya, kualitas tetap terjaga sukses terus gan"
+    },
+{
+  {
+    "completions": [
+      {
+        "created_at": 1593423290,
+        "id": 9001,
+        "lead_time": 5.285,
+        "result": [
+          {
+            "from_name": "sentiment",
+            "id": "jfZwNfNGxq",
+            "to_name": "text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "Positive"
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "data": {
+      "pesan": 6,
+      "text": "Asli puas bgt. customer merasa special dikasih gift card oleh seller. Brilliant!"
+    },
+    "id": 9
+  },
+    "completions": [
+      {
+        "created_at": 1593423264,
+        "id": 6001,
+        "lead_time": 6.107,
+        "result": [
+          {
+            "from_name": "sentiment",
+            "id": "Qr2usX02jt",
+            "to_name": "text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "Positive"
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "data": {
+      "pesan": 7,
+      "text": "Mantul, tempered glassnta oke banget"
+    },
+    "id": 6
+  },
+  {
+    "completions": [
+      {
+        "created_at": 1593423273,
+        "id": 7001,
+        "lead_time": 5.312,
+        "result": [
+          {
+            "from_name": "sentiment",
+            "id": "l0aHF2PX22",
+            "to_name": "text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "Positive"
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "data": {
+      "pesan": 8,
+      "text": "Terbaikkkkkkkkk"
+    },
+    "id": 7
+  },
+    "id": 4
+  },
+{
+    "completions": [
+      {
+        "created_at": 1593423281,
+        "id": 8001,
+        "lead_time": 5.138,
+        "result": [
+          {
+            "from_name": "sentiment",
+            "id": "eQkB5ZgElv",
+            "to_name": "text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "Negative"
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "data": {
+      "pesan": 9,
+      "text": "Baru pasang langsung retak"
+    },
+    "id": 8
+  },
+    {
+    "completions": [
+      {
+        "created_at": 1593423290,
+        "id": 9001,
+        "lead_time": 5.285,
+        "result": [
+          {
+            "from_name": "sentiment",
+            "id": "jfZwNfNGxq",
+            "to_name": "text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "Positive"
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "data": {
+      "pesan": 10,
+      "text": "mantap thank u gan"
+    },
+    "id": 9
+  },
+						Headset oppo
+
+    "data": {
+      "pesan": 1,
+      "text": "Lumayan bagus sesuai dengan harganya." 
+    },
+    "id": 10
+  },
+  {
+    "completions": [
+      {
+        "created_at": 1593423317,
+        "id": 11001,
+        "lead_time": 15.067,
+        "result": [
+          {
+            "from_name": "sentiment",
+            "id": "AsHi9B7MDf",
+            "to_name": "text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "Neutral"
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "data": {
+      "pesan": 2,
+      "text": "Mic nya tidak berfungsi 😭.\nPacking aman & rapi. Pengiriman cepat, gratis lagi. Recomended seller."
+    },
+    "id": 11
+  },
+  {
+    "completions": [
+      {
+        "created_at": 1593423361,
+        "id": 12001,
+        "lead_time": 39.259,
+        "result": [
+          {
+            "from_name": "sentiment",
+            "id": "mdUOnaf-P2",
+            "to_name": "text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "Positive"
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "data": {
+      "pesan": 3,
+      "text": "Fast respon. Produk murah tapi tidak murahan. Packing aman & rapi. Pengiriman cepat. Recomended seller."
+    },
+    "id": 12
+  },
+  {
+    "completions": [
+      {
+        "created_at": 1593423373,
+        "id": 13001,
+        "lead_time": 9.129,
+        "result": [
+          {
+            "from_name": "sentiment",
+            "id": "-dnkDe-au2",
+            "to_name": "text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "Negative"
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "data": {
+      "pesan": 4,
+      "text": "Saya beli 3 pcs..udh di kasih catatan di test seblm di kirim..koq rusak 1..nilainya 1,5 bintang.." headset oppo
+    },
+    "id": 13
+  },
+  {
+    "completions": [
+      {
+        "created_at": 1593423385,
+        "id": 14001,
+        "lead_time": 8.065,
+        "result": [
+          {
+            "from_name": "sentiment",
+            "id": "42F1Nd1Rxs",
+            "to_name": "text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "Negative"
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "data": {
+      "pesan": 5,
+      "text": "Headset berfungsi sebelah,. TDK kayak yg beli pertama" 
+    },
+    "id": 14
+  },
+  {
+    "completions": [
+      {
+        "created_at": 1593423395,
+        "id": 15001,
+        "lead_time": 6.252,
+        "result": [
+          {
+            "from_name": "sentiment",
+            "id": "AZ-u2UJ5mF",
+            "to_name": "text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "Negative"
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "data": {
+      "pesan": 6,
+      "text": "Rusak" 
+    },
+    "id": 15
+  },
+  {
+    "completions": [
+      {
+        "created_at": 1593423481,
+        "id": 16001,
+        "lead_time": 83.371,
+        "result": [
+          {
+            "from_name": "sentiment",
+            "id": "qEWjeiIIfm",
+            "to_name": "text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "Neutral"
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "data": {
+      "pesan": 7,
+      "text": "Untuk pengiriman cepat, tapi beli 2 yang 1 gak bisa bunyi" headset oppo
+    },
+    "id": 16
+  },
+  {
+    "completions": [
+      {
+        "created_at": 1593423489,
+        "id": 17001,
+        "lead_time": 4.14,
+        "result": [
+          {
+            "from_name": "sentiment",
+            "id": "1k6xmeBvtn",
+            "to_name": "text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "Positive"
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "data": {
+      "pesan": 8,
+      "text": "Lumayan ajib ...sesuai harganya" 
+    },
+    "id": 17
+  },
+  {
+    "completions": [
+      {
+        "created_at": 1593423498,
+        "id": 18001,
+        "lead_time": 5.435,
+        "result": [
+          {
+            "from_name": "sentiment",
+            "id": "gEwOcSj5JX",
+            "to_name": "text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "Positive"
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "data": {
+      "pesan": 9,
+      "text": "Produk baik, pengiriman cepat"
+    },
+    "id": 18
+  },
+  {
+    "completions": [
+      {
+        "created_at": 1593423512,
+        "id": 19001,
+        "lead_time": 10.02,
+        "result": [
+          {
+            "from_name": "sentiment",
+            "id": "dAF9M81JPS",
+            "to_name": "text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "Positive"
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "data": {
+      "pesan": 10,
+      "text": "Sesuai dengan harga fast respon pengiriman cepat"
+    },
+    "id": 19
+  },
+  
+
+							Headset Bluetooth (TWS)
+  {
+    "completions": [
+      {
+        "created_at": 1593423528,
+        "id": 20001,
+        "lead_time": 12.748,
+        "result": [
+          {
+            "from_name": "sentiment",
+            "id": "6vnT9bK2PW",
+            "to_name": "text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "Neutral"
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "data": {
+      "pesan": 1,
+      "text": "Ukuran TWS terlalu besar"
+    },
+    "id": 20
+  },
+  {
+    "completions": [
+      {
+        "created_at": 1593423538,
+        "id": 21001,
+        "lead_time": 6.11,
+        "result": [
+          {
+            "from_name": "sentiment",
+            "id": "kZG47s1LUl",
+            "to_name": "text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "Positive"
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "data": {
+      "pesan": 2,
+      "text": "Bagus banget langsung bisa dipakai tidak mengecewakan"
+    },
+    "id": 21
+  },
+  {
+    "completions": [
+      {
+        "created_at": 1593423556,
+        "id": 22001,
+        "lead_time": 14.776,
+        "result": [
+          {
+            "from_name": "sentiment",
+            "id": "4oK-31NGV7",
+            "to_name": "text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "Positive"
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "data": {
+      "pesan": 3,
+      "text": "Mantaaabbbb....berfungsi dgn baik...pengiriman cepat..cs nya ramah....recommended"
+    },
+    "id": 22
+  },
+  {
+    "completions": [
+      {
+        "created_at": 1593423566,
+        "id": 23001,
+        "lead_time": 5.869,
+        "result": [
+          {
+            "from_name": "sentiment",
+            "id": "9-8zXNS8lI",
+            "to_name": "text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "Positive"
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "data": {
+      "pesan": 4,
+      "text": "Sesuai pesanan cepat tepat n akurat,thank's"
+    },
+    "id": 23
+  },
+  {
+    "completions": [
+      {
+        "created_at": 1593423572,
+        "id": 24001,
+        "lead_time": 2.837,
+        "result": [
+          {
+            "from_name": "sentiment",
+            "id": "FawaYRlQNI",
+            "to_name": "text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "Negative"
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "data": {
+      "pesan": 5,
+      "text": "Barang yg dikirim kualitas jelek.. airpod sebelah kanan ga berfungsi"
+    },
+    "id": 24
+  },
+  {
+    "completions": [
+      {
+        "created_at": 1593423577,
+        "id": 25001,
+        "lead_time": 1.54,
+        "result": [
+          {
+            "from_name": "sentiment",
+            "id": "BQZOqbcYhY",
+            "to_name": "text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "Positive"
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "data": {
+      "pesan": 6,
+      "text": "barang ok, pengiriman cepat"
+    },
+    "id": 25
+  },
+  {
+    "completions": [
+      {
+        "created_at": 1593423585,
+        "id": 26001,
+        "lead_time": 4.253,
+        "result": [
+          {
+            "from_name": "sentiment",
+            "id": "1FQwgX7sCU",
+            "to_name": "text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "Negative"
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "data": {
+      "pesan": 7,
+      "text": "nyala sebelah satu mati lah"
+    },
+    "id": 26
+  },
+  {
+    "completions": [
+      {
+        "created_at": 1593423592,
+        "id": 27001,
+        "lead_time": 3.262,
+        "result": [
+          {
+            "from_name": "sentiment",
+            "id": "1BlCqeMMtq",
+            "to_name": "text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "Positive"
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "data": {
+      "pesan": 8,
+      "text": "Kondisi & pengemasan bagus. Brg sesuai dng yg di tawarkan"
+    },
+    "id": 27
+  },
+  {
+    "completions": [
+      {
+        "created_at": 1593423601,
+        "id": 28001,
+        "lead_time": 5.211,
+        "result": [
+          {
+            "from_name": "sentiment",
+            "id": "LoUCQAdIX0",
+            "to_name": "text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "Negative"
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "data": {
+      "pesan": 9,
+      "text": "Ngga bagus suaranya"
+    },
+    "id": 28
+  },
+  {
+    "completions": [
+      {
+        "created_at": 1593423607,
+        "id": 29001,
+        "lead_time": 3.396,
+        "result": [
+          {
+            "from_name": "sentiment",
+            "id": "N-Ev8TnHAk",
+            "to_name": "text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "Positive"
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "data": {
+      "pesan": 10,
+      "text": "Bagus barang sesuai dan cepat sampai"
+    },
+    "id": 29
+  },
+ 							 Headset samsung	
+  {
+    "completions": [
+      {
+        "created_at": 1593423615,
+        "id": 30001,
+        "lead_time": 3.768,
+        "result": [
+          {
+            "from_name": "sentiment",
+            "id": "xGjodtm2wb",
+            "to_name": "text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "Positive"
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "data": {
+      "pesan": 1,
+      "text": "Pengirimannya sangat cepat dan pakungnya sangat bagus."
+    },
+    "id": 30
+  },
+  {
+    "completions": [
+      {
+        "created_at": 1593423620,
+        "id": 31001,
+        "lead_time": 1.337,
+        "result": [
+          {
+            "from_name": "sentiment",
+            "id": "3PGqhWJoR-",
+            "to_name": "text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "Positive"
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "data": {
+      "pesan": 2,
+      "text": "Sip lah.."
+    },
+    "id": 31
+  },
+  {
+    "completions": [
+      {
+        "created_at": 1593423628,
+        "id": 32001,
+        "lead_time": 4.434,
+        "result": [
+          {
+            "from_name": "sentiment",
+            "id": "FJRtt2Am6f",
+            "to_name": "text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "Neutral"
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "data": {
+      "pesan": 3,
+      "text": "Belum dicobain sih mudah2an berfungsi semua. Saran saja utk pengemasan untuk lebih diperbaiki lagi padahal udh bubble wrap karena mau dijual lagi. Semoga sukses."
+    },
+    "id": 32
+  },
+  {
+    "completions": [
+      {
+        "created_at": 1593423634,
+        "id": 33001,
+        "lead_time": 2.777,
+        "result": [
+          {
+            "from_name": "sentiment",
+            "id": "5p8_SQTE32",
+            "to_name": "text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "Positive"
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "data": {
+      "pesan": 4,
+      "text": "Suaranya jernih mantapp banget deh pokoknyaa dijamin ga nyesel👍👍👍😊"
+    },
+    "id": 33
+  },
+  {
+    "completions": [
+      {
+        "created_at": 1593423641,
+        "id": 34001,
+        "lead_time": 2.906,
+        "result": [
+          {
+            "from_name": "sentiment",
+            "id": "19I2BdOBXk",
+            "to_name": "text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "Positive"
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "data": {
+      "pesan": 5,
+      "text": "Mantaf bos,sesuai pesanan\nRespon cepet,pengiriman ok"
+    },
+    "id": 34
+  },
+  {
+    "completions": [
+      {
+        "created_at": 1593423650,
+        "id": 35001,
+        "lead_time": 6.043,
+        "result": [
+          {
+            "from_name": "sentiment",
+            "id": "6EBwj_srd-",
+            "to_name": "text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "Negative"
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "data": {
+      "pesan": 6,
+      "text": "Jelek"
+    },
+    "id": 35
+  },
+  {
+    "completions": [
+      {
+        "created_at": 1593423662,
+        "id": 36001,
+        "lead_time": 8.542,
+        "result": [
+          {
+            "from_name": "sentiment",
+            "id": "JtMUYH89Pm",
+            "to_name": "text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "Neutral"
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "data": {
+      "pesan": 7,
+      "text": "Barang nya ok .cuma sampe sini yg penyok"
+    },
+    "id": 36
+  },
+  {
+    "completions": [
+      {
+        "created_at": 1593423683,
+        "id": 37001,
+        "lead_time": 17.262,
+        "result": [
+          {
+            "from_name": "sentiment",
+            "id": "DiOcHy7ziS",
+            "to_name": "text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "Neutral"
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "data": {
+      "pesan": 8,
+      "text": "Ada satu headset , yg beda model ya kayaya ga tahu bisa ga pas buat kuping, tapi mksh Uda sampai paketya ..kmrin baru skrg comennya.."
+    },
+    "id": 37
+  },
+  {
+    "completions": [
+      {
+        "created_at": 1593423689,
+        "id": 38001,
+        "lead_time": 1.872,
+        "result": [
+          {
+            "from_name": "sentiment",
+            "id": "dWv_mmXqNG",
+            "to_name": "text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "Positive"
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "data": {
+      "pesan": 9,
+      "text": "Terima kasih"
+    },
+    "id": 38
+  },
+  {
+    "completions": [
+      {
+        "created_at": 1593423695,
+        "id": 39001,
+        "lead_time": 3.243,
+        "result": [
+          {
+            "from_name": "sentiment",
+            "id": "XUL3BZ2hfe",
+            "to_name": "text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "Neutral"
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "data": {
+      "pesan": 10,
+      "text": "pengiriman cepat barang mumer tapi barang tidak sesuai box nya"
+    },
+    "id": 39
+  },
+							Mic Bm 800
+  {
+    "completions": [
+      {
+        "created_at": 1593423700,
+        "id": 40001,
+        "lead_time": 1.651,
+        "result": [
+          {
+            "from_name": "sentiment",
+            "id": "JP9cNdrLPU",
+            "to_name": "text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "Positive"
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "data": {
+      "pesan": 1,
+      "text": "Bonus lengkap, pengiriman cepat"
+    },
+    "id": 40
+  },
+  {
+    "completions": [
+      {
+        "created_at": 1593423710,
+        "id": 41001,
+        "lead_time": 5.865,
+        "result": [
+          {
+            "from_name": "sentiment",
+            "id": "MUh-es0Olb",
+            "to_name": "text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "Negative"
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "data": {
+      "pesan": 2,
+      "text": "Gabisa kepake, dan gak direspon lagi"
+    },
+    "id": 41
+  },
+  {
+    "completions": [
+      {
+        "created_at": 1593423716,
+        "id": 42001,
+        "lead_time": 2.898,
+        "result": [
+          {
+            "from_name": "sentiment",
+            "id": "wtSMO5HYIT",
+            "to_name": "text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "Positive"
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "data": {
+      "pesan": 3,
+      "text": "Responsif, Recomended Seller deh,,, sukses terus ya gan"
+    },
+    "id": 42
+  },
+  {
+    "completions": [
+      {
+        "created_at": 1593423722,
+        "id": 43001,
+        "lead_time": 2.231,
+        "result": [
+          {
+            "from_name": "sentiment",
+            "id": "uzkBtGmY69",
+            "to_name": "text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "Positive"
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "data": {
+      "pesan": 4,
+      "text": "Baguss"
+    },
+    "id": 43
+  },
+  {
+    "completions": [
+      {
+        "created_at": 1593423729,
+        "id": 44001,
+        "lead_time": 3.315,
+        "result": [
+          {
+            "from_name": "sentiment",
+            "id": "1pKukE2-pg",
+            "to_name": "text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "Positive"
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "data": {
+      "pesan": 5,
+      "text": "thanks udh nyampe, barang komplit, packing rapi bagus, berfungsi dgn baik"
+    },
+    "id": 44
+  },
+  {
+    "completions": [
+      {
+        "created_at": 1593423735,
+        "id": 45001,
+        "lead_time": 2.283,
+        "result": [
+          {
+            "from_name": "sentiment",
+            "id": "kq4LbaeVgt",
+            "to_name": "text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "Positive"
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "data": {
+      "pesan": 6,
+      "text": "Bagusss barang nya dan packing nya rapih"
+    },
+    "id": 45
+  },
+  {
+    "completions": [
+      {
+        "created_at": 1593423741,
+        "id": 46001,
+        "lead_time": 2.598,
+        "result": [
+          {
+            "from_name": "sentiment",
+            "id": "n3Mu2zSPAn",
+            "to_name": "text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "Positive"
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "data": {
+      "pesan": 7,
+      "text": "Proses lumayan cepat, barang sampai dan berfungsi sesuai. Mantap!"
+    },
+    "id": 46
+  },
+  {
+    "completions": [
+      {
+        "created_at": 1593423750,
+        "id": 47001,
+        "lead_time": 5.475,
+        "result": [
+          {
+            "from_name": "sentiment",
+            "id": "OZprQeek9p",
+            "to_name": "text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "Positive"
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "data": {
+      "pesan": 8,
+      "text": "Sesuai pesanan"
+    },
+    "id": 47
+  },
+  {
+    "completions": [
+      {
+        "created_at": 1593423756,
+        "id": 48001,
+        "lead_time": 2.093,
+        "result": [
+          {
+            "from_name": "sentiment",
+            "id": "lancoIEk0B",
+            "to_name": "text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "Positive"
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "data": {
+      "pesan": 9,
+      "text": "Keren sesuai pesanan... Mantappp.. pengiriman cepat"
+    },
+    "id": 48
+  },
+  {
+    "completions": [
+      {
+        "created_at": 1593423763,
+        "id": 49001,
+        "lead_time": 2.906,
+        "result": [
+          {
+            "from_name": "sentiment",
+            "id": "8lP8HMwLEb",
+            "to_name": "text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "Positive"
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "data": {
+      "pesan": 10,
+      "text": "packing bagus, barang juga mantap udh di coba,, keren keren.."
+    },
+    "id": 49
+  },
+  						Itsuki Ramen
+  {
+    "completions": [
+      {
+        "created_at": 1593423769,
+        "id": 50001,
+        "lead_time": 2.608,
+        "result": [
+          {
+            "from_name": "sentiment",
+            "id": "JytcMUpNrD",
+            "to_name": "text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "Positive"
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "data": {
+      "pesan": 1,
+      "text": "Enak"
+    },
+    "id": 50
+  },
+  {
+    "completions": [
+      {
+        "created_at": 1593423776,
+        "id": 51001,
+        "lead_time": 3.187,
+        "result": [
+          {
+            "from_name": "sentiment",
+            "id": "cI291dWA2q",
+            "to_name": "text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "Positive"
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "data": {
+      "pesan": 2,
+      "text": "Barang bagus.... respon penjual cepat"
+    },
+    "id": 51
+  },
+  {
+    "completions": [
+      {
+        "created_at": 1593423783,
+        "id": 52001,
+        "lead_time": 4.208,
+        "result": [
+          {
+            "from_name": "sentiment",
+            "id": "X4dVACwGgs",
+            "to_name": "text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "Neutral"
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "data": {
+      "pesan": 3,
+      "text": "😀"
+    },
+    "id": 52
+  },
+  {
+    "completions": [
+      {
+        "created_at": 1593423797,
+        "id": 53001,
+        "lead_time": 10.494,
+        "result": [
+          {
+            "from_name": "sentiment",
+            "id": "78ej_dNEj-",
+            "to_name": "text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "Neutral"
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "data": {
+      "pesan": 4,
+      "text": "Produk original, expired sesuai deskripsi, harga bersaing, untuk rasa belum dicoba jadi gak bisa komen"
+    },
+    "id": 53
+  },
+  {
+    "completions": [
+      {
+        "created_at": 1593423807,
+        "id": 54001,
+        "lead_time": 5.628,
+        "result": [
+          {
+            "from_name": "sentiment",
+            "id": "Znk2Xys1xC",
+            "to_name": "text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "Positive"
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "data": {
+      "pesan": 5,
+      "text": "seller best"
+    },
+    "id": 54
+  },
+  {
+    "completions": [
+      {
+        "created_at": 1593423814,
+        "id": 55001,
+        "lead_time": 2.833,
+        "result": [
+          {
+            "from_name": "sentiment",
+            "id": "DihHp18yvE",
+            "to_name": "text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "Positive"
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "data": {
+      "pesan": 6,
+      "text": "Oke..terimakasih..akhirnya datang juga ni itsuki ramen"
+    },
+    "id": 55
+  },
+  {
+    "completions": [
+      {
+        "created_at": 1593423820,
+        "id": 56001,
+        "lead_time": 1.917,
+        "result": [
+          {
+            "from_name": "sentiment",
+            "id": "7NBFQrN75G",
+            "to_name": "text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "Positive"
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "data": {
+      "pesan": 7,
+      "text": "Enak.."
+    },
+    "id": 56
+  },
+  {
+    "completions": [
+      {
+        "created_at": 1593423829,
+        "id": 57001,
+        "lead_time": 5.912,
+        "result": [
+          {
+            "from_name": "sentiment",
+            "id": "VJxd2ZFvnj",
+            "to_name": "text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "Positive"
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "data": {
+      "pesan": 8,
+      "text": "Sesuai permintaan"
+    },
+    "id": 57
+  },
+  {
+    "completions": [
+      {
+        "created_at": 1593423838,
+        "id": 58001,
+        "lead_time": 5.565,
+        "result": [
+          {
+            "from_name": "sentiment",
+            "id": "gkE-PZjlWS",
+            "to_name": "text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "Positive"
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "data": {
+      "pesan": 9,
+      "text": "belum coba yang rasa ini, tapi kuah tonkotsu harusnya tidak diragukan lagi"
+    },
+    "id": 58
+  },
+  {
+    "completions": [
+      {
+        "created_at": 1593423857,
+        "id": 59001,
+        "lead_time": 15.718,
+        "result": [
+          {
+            "from_name": "sentiment",
+            "id": "5OYHExzxr-",
+            "to_name": "text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "Positive"
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "data": {
+      "pesan": 10,
+      "text": "Biasanya jarang kasih ulasan panjang, tapi penjual and produk ini harus banget dikasih ulasan. Ini pembelian kedua, awalnya cuma beli 4 pack dan 3 varian ramen, ternyata enak dan packingnya oke, ramennya nyampe dalam keadaan bagus (gak patah-patah). Akhirnya beli lagi karena pelayanan dan produk OK. Recommended!"
+    },
+    "id": 59
+  },
+  							Smartwatch
+  {
+    "completions": [
+      {
+        "created_at": 1593423864,
+        "id": 60001,
+        "lead_time": 2.362,
+        "result": [
+          {
+            "from_name": "sentiment",
+            "id": "QbRJkouzHE",
+            "to_name": "text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "Positive"
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "data": {
+      "pesan": 1,
+      "text": "Barang sesuai pesanan, penjual responsif 🙏👍"
+    },
+    "id": 60
+  },
+  {
+    "completions": [
+      {
+        "created_at": 1593423874,
+        "id": 61001,
+        "lead_time": 4.221,
+        "result": [
+          {
+            "from_name": "sentiment",
+            "id": "E-D6RLN44H",
+            "to_name": "text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "Negative"
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "data": {
+      "pesan": 2,
+      "text": "Beli jam smartwacth tidak bisa di konek ke HP...pertanyaan malah di suruh lht youtube...di dalam tidak ada panduan😵"
+    },
+    "id": 61
+  },
+  {
+    "completions": [
+      {
+        "created_at": 1593423892,
+        "id": 62001,
+        "lead_time": 13.598,
+        "result": [
+          {
+            "from_name": "sentiment",
+            "id": "uGDcV6YXYt",
+            "to_name": "text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "Negative"
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "data": {
+      "pesan": 3,
+      "text": "Cepat sampai tpi kok rusak y,ga bs nyala,gmn ini cara komplainnya"
+    },
+    "id": 62
+  },
+  {
+    "completions": [
+      {
+        "created_at": 1593423897,
+        "id": 63001,
+        "lead_time": 1.741,
+        "result": [
+          {
+            "from_name": "sentiment",
+            "id": "FaXaOhMo7D",
+            "to_name": "text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "Positive"
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "data": {
+      "pesan": 4,
+      "text": "Barang bagus tepat waktu dan muda dioperasikan terima kasih"
+    },
+    "id": 63
+  },
+  {
+    "completions": [
+      {
+        "created_at": 1593423906,
+        "id": 64001,
+        "lead_time": 5.035,
+        "result": [
+          {
+            "from_name": "sentiment",
+            "id": "Qe1Bl4cHb1",
+            "to_name": "text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "Negative"
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "data": {
+      "pesan": 5,
+      "text": "Barang ya gak bisa di nyalain"
+    },
+    "id": 64
+  },
+  {
+    "completions": [
+      {
+        "created_at": 1593423915,
+        "id": 65001,
+        "lead_time": 4.908,
+        "result": [
+          {
+            "from_name": "sentiment",
+            "id": "J3-shZRqmd",
+            "to_name": "text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "Positive"
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "data": {
+      "pesan": 6,
+      "text": "Murah tapi gak murahan"
+    },
+    "id": 65
+  },
+  {
+    "completions": [
+      {
+        "created_at": 1593423927,
+        "id": 66001,
+        "lead_time": 7.98,
+        "result": [
+          {
+            "from_name": "sentiment",
+            "id": "vB-PK4UKcj",
+            "to_name": "text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "Negative"
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "data": {
+      "pesan": 7,
+      "text": "layar tdk ada plastik nya jd pada baret 99% sama dgn harga yg 56rb"
+    },
+    "id": 66
+  },
+  {
+    "completions": [
+      {
+        "created_at": 1593423940,
+        "id": 67001,
+        "lead_time": 9.466,
+        "result": [
+          {
+            "from_name": "sentiment",
+            "id": "_tFcRpCBCS",
+            "to_name": "text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "Neutral"
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "data": {
+      "pesan": 8,
+      "text": "Kualitas produk bagus tapi tidak bisa connect dengan aplikasi Mi Fit"
+    },
+    "id": 67
+  },
+  {
+    "completions": [
+      {
+        "created_at": 1593423955,
+        "id": 68001,
+        "lead_time": 10.955,
+        "result": [
+          {
+            "from_name": "sentiment",
+            "id": "HKy__MGV05",
+            "to_name": "text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "Negative"
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "data": {
+      "pesan": 9,
+      "text": "Tidak sama fiturnya.. cuma sama kerdusnya saja.. be aware"
+    },
+    "id": 68
+  },
+  {
+    "completions": [
+      {
+        "created_at": 1593423965,
+        "id": 69001,
+        "lead_time": 6.225,
+        "result": [
+          {
+            "from_name": "sentiment",
+            "id": "WtmL2CrCto",
+            "to_name": "text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "Neutral"
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "data": {
+      "pesan": 10,
+      "text": "Cepat sampai, semoga awet"
+    },
+    "id": 69
+  },
+							Xiaomi note 5
+  {
+    "completions": [
+      {
+        "created_at": 1593423971,
+        "id": 70001,
+        "lead_time": 2.503,
+        "result": [
+          {
+            "from_name": "sentiment",
+            "id": "aR3YphGxPg",
+            "to_name": "text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "Positive"
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "data": {
+      "pesan": 1,
+      "text": "Sippp"
+    },
+    "id": 70
+  },
+  {
+    "completions": [
+      {
+        "created_at": 1593423981,
+        "id": 71001,
+        "lead_time": 5.777,
+        "result": [
+          {
+            "from_name": "sentiment",
+            "id": "hU7nGbk3c7",
+            "to_name": "text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "Negative"
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "data": {
+      "pesan": 2,
+      "text": "Agak sedikit kecewa"
+    },
+    "id": 71
+  },
+  {
+    "completions": [
+      {
+        "created_at": 1593423989,
+        "id": 72001,
+        "lead_time": 4.167,
+        "result": [
+          {
+            "from_name": "sentiment",
+            "id": "qV-j-U_XUV",
+            "to_name": "text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "Neutral"
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "data": {
+      "pesan": 3,
+      "text": "Packaging lmyn rapi lah... Dan baru tau kalo hp ini punya lampu indikator yang tembus pandang... Semoga aja g palsu atau daur ulang"
+    },
+    "id": 72
+  },
+  {
+    "completions": [
+      {
+        "created_at": 1593423996,
+        "id": 73001,
+        "lead_time": 3.559,
+        "result": [
+          {
+            "from_name": "sentiment",
+            "id": "AzWFf3Abob",
+            "to_name": "text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "Negative"
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "data": {
+      "pesan": 4,
+      "text": "pengirimanya sih cepat,tapi kondisi hp tidak memuaskan.spiker pecah.lemot."
+    },
+    "id": 73
+  },
+  {
+    "completions": [
+      {
+        "created_at": 1593424173,
+        "id": 74001,
+        "lead_time": 173.776,
+        "result": [
+          {
+            "from_name": "sentiment",
+            "id": "fTTIYT0KdJ",
+            "to_name": "text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "Positive"
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "data": {
+      "pesan": 5,
+      "text": "Rekomended seller. Respon cpt brg smpai dgn aman. Smoga awet ga ad kndala d"
+    },
+    "id": 74
+  },
+  {
+    "completions": [
+      {
+        "created_at": 1593424185,
+        "id": 75001,
+        "lead_time": 6.76,
+        "result": [
+          {
+            "from_name": "sentiment",
+            "id": "IEyg5jmfZE",
+            "to_name": "text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "Positive"
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "data": {
+      "pesan": 6,
+      "text": "Pesanan tepat waktu , mantappp"
+    },
+    "id": 75
+  },
+  {
+    "completions": [
+      {
+        "created_at": 1593424211,
+        "id": 76001,
+        "lead_time": 21.814,
+        "result": [
+          {
+            "from_name": "sentiment",
+            "id": "iJA1lyeqYw",
+            "to_name": "text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "Positive"
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "data": {
+      "pesan": 7,
+      "text": "Respon cepat, sesuai deskrip, semoga awet."
+    },
+    "id": 76
+  },
+  {
+    "completions": [
+      {
+        "created_at": 1593424226,
+        "id": 77001,
+        "lead_time": 10.581,
+        "result": [
+          {
+            "from_name": "sentiment",
+            "id": "wHXlWw4-gZ",
+            "to_name": "text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "Positive"
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "data": {
+      "pesan": 8,
+      "text": "Mantap sangat puas. Sesuai sama yg di katalog. Pake gosend lebih cepat. Barang original. Bukan kaleng2. Tq buat yg buat toko. Mulai dulu ajah."
+    },
+    "id": 77
+  },
+  {
+    "completions": [
+      {
+        "created_at": 1593424236,
+        "id": 78001,
+        "lead_time": 5.566,
+        "result": [
+          {
+            "from_name": "sentiment",
+            "id": "SXL07OUWp6",
+            "to_name": "text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "Positive"
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "data": {
+      "pesan": 9,
+      "text": "Sesuai deskripsi, semoga sukses selalu gaannnnnnn"
+    },
+    "id": 78
+  },
+  {
+    "completions": [
+      {
+        "created_at": 1593424247,
+        "id": 79001,
+        "lead_time": 6.984,
+        "result": [
+          {
+            "from_name": "sentiment",
+            "id": "7lHKIXwvFT",
+            "to_name": "text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "Positive"
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "data": {
+      "pesan": 10,
+      "text": "Sip all in good condition !"
+    },
+    "id": 79
+  },
+
+							HP Xiaomi Redmi 4x
+  {
+    "completions": [
+      {
+        "created_at": 1593424255,
+        "id": 80001,
+        "lead_time": 3.893,
+        "result": [
+          {
+            "from_name": "sentiment",
+            "id": "pTn6ErER2D",
+            "to_name": "text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "Negative"
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "data": {
+      "pesan": 1,
+      "text": "No recomended"
+    },
+    "id": 80
+  },
+  {
+    "completions": [
+      {
+        "created_at": 1593424266,
+        "id": 81001,
+        "lead_time": 7.451,
+        "result": [
+          {
+            "from_name": "sentiment",
+            "id": "BTGtgbfnI4",
+            "to_name": "text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "Positive"
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "data": {
+      "pesan": 2,
+      "text": "Thankyou, lama responn\nTapi syukur masih bisa sampai dengan tepat waktu 👍🏻"
+    },
+    "id": 81
+  },
+  {
+    "completions": [
+      {
+        "created_at": 1593424274,
+        "id": 82001,
+        "lead_time": 4.513,
+        "result": [
+          {
+            "from_name": "sentiment",
+            "id": "fcOYSKxQLS",
+            "to_name": "text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "Positive"
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "data": {
+      "pesan": 3,
+      "text": "barang oke seller lbh ok. gokil sellernya bae bngt kasih bnyk bonus padahal ga minta"
+    },
+    "id": 82
+  },
+  {
+    "completions": [
+      {
+        "created_at": 1593424283,
+        "id": 83001,
+        "lead_time": 3.97,
+        "result": [
+          {
+            "from_name": "sentiment",
+            "id": "qjZnYdnHSw",
+            "to_name": "text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "Positive"
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "data": {
+      "pesan": 4,
+      "text": "Gilaaaa,,,inii hp nya muluss bangettttt dan juga murahhh syekaliiiiii\nTerimakasih gan"
+    },
+    "id": 83
+  },
+  {
+    "completions": [
+      {
+        "created_at": 1593424289,
+        "id": 84001,
+        "lead_time": 2.35,
+        "result": [
+          {
+            "from_name": "sentiment",
+            "id": "6KUHBRdA_o",
+            "to_name": "text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "Positive"
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "data": {
+      "pesan": 5,
+      "text": "Theee besstttt deehhh pokoknyaaaaa"
+    },
+    "id": 84
+  },
+  {
+    "completions": [
+      {
+        "created_at": 1593424301,
+        "id": 85001,
+        "lead_time": 8.454,
+        "result": [
+          {
+            "from_name": "sentiment",
+            "id": "icnX-dSsUW",
+            "to_name": "text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "Neutral"
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "data": {
+      "pesan": 6,
+      "text": ""
+    },
+    "id": 85
+  },
+  {
+    "completions": [
+      {
+        "created_at": 1593424314,
+        "id": 86001,
+        "lead_time": 9.025,
+        "result": [
+          {
+            "from_name": "sentiment",
+            "id": "OLKP3Wot1U",
+            "to_name": "text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "Neutral"
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "data": {
+      "pesan": 7,
+      "text": ""
+    },
+    "id": 86
+  },
+  {
+    "completions": [
+      {
+        "created_at": 1593424321,
+        "id": 87001,
+        "lead_time": 2.395,
+        "result": [
+          {
+            "from_name": "sentiment",
+            "id": "rtJfSNm_XD",
+            "to_name": "text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "Neutral"
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "data": {
+      "pesan": 8,
+      "text": ""
+    },
+    "id": 87
+  },
+  {
+    "completions": [
+      {
+        "created_at": 1593424330,
+        "id": 88001,
+        "lead_time": 6.102,
+        "result": [
+          {
+            "from_name": "sentiment",
+            "id": "2k7iJRepsd",
+            "to_name": "text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "Neutral"
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "data": {
+      "pesan": 9,
+      "text": ""
+    },
+    "id": 88
+  },
+  {
+    "completions": [
+      {
+        "created_at": 1593424336,
+        "id": 89001,
+        "lead_time": 2.184,
+        "result": [
+          {
+            "from_name": "sentiment",
+            "id": "FEu_RDHjWv",
+            "to_name": "text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "Neutral"
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "data": {
+      "pesan": 10,
+      "text": ""
+    },
+    "id": 89
+  },
+
+
+  {
+    "completions": [
+      {
+        "created_at": 1593423290,
+        "id": 9001,
+        "lead_time": 5.285,
+        "result": [
+          {
+            "from_name": "sentiment",
+            "id": "jfZwNfNGxq",
+            "to_name": "text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "Positive"
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "data": {
+      "pesan": 10,
+      "text": "mantap thank u gan"
+    },
+    "id": 9
+  },
+							Iphone 6 64 GB
+  {
+    "completions": [
+      {
+        "created_at": 1593424342,
+        "id": 90001,
+        "lead_time": 2.157,
+        "result": [
+          {
+            "from_name": "sentiment",
+            "id": "MsoTasX2F5",
+            "to_name": "text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "Negative"
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "data": {
+      "pesan": 1,
+      "text": "Hp baru belum 1 minggu kok sdh mati total ?"
+    },
+    "id": 90
+  },
+  {
+    "completions": [
+      {
+        "created_at": 1593424366,
+        "id": 91001,
+        "lead_time": 19.43,
+        "result": [
+          {
+            "from_name": "sentiment",
+            "id": "CbEl-gqMm3",
+            "to_name": "text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "Positive"
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "data": {
+      "pesan": 2,
+      "text": "Terimakasih barangnya sudah diterima dan berjalan dengan baik"
+    },
+    "id": 91
+  },
+  {
+    "completions": [
+      {
+        "created_at": 1593424375,
+        "id": 92001,
+        "lead_time": 4.482,
+        "result": [
+          {
+            "from_name": "sentiment",
+            "id": "lNPM-8_cql",
+            "to_name": "text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "Positive"
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "data": {
+      "pesan": 3,
+      "text": "Ok... Respon cepat...."
+    },
+    "id": 92
+  },
+  {
+    "completions": [
+      {
+        "created_at": 1593424393,
+        "id": 93001,
+        "lead_time": 13.776,
+        "result": [
+          {
+            "from_name": "sentiment",
+            "id": "bnEywculcR",
+            "to_name": "text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "Negative"
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "data": {
+      "pesan": 4,
+      "text": "iPhone nya ga bisa di pake ngehang terus dan beraklin kali harus di restarts ulang karna tiba tiba slow response dan aplikasi mendadak jalan sendiri tanpa di sentuh saya kecewa produce nya tidak sesuai denga. harapan kemana saya harus komplen?"
+    },
+    "id": 93
+  },
+  {
+    "completions": [
+      {
+        "created_at": 1593424400,
+        "id": 94001,
+        "lead_time": 4.091,
+        "result": [
+          {
+            "from_name": "sentiment",
+            "id": "pKYbjfU2_a",
+            "to_name": "text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "Negative"
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "data": {
+      "pesan": 5,
+      "text": "Main button not working on new phone"
+    },
+    "id": 94
+  },
+  {
+    "completions": [
+      {
+        "created_at": 1593424412,
+        "id": 95001,
+        "lead_time": 7.716,
+        "result": [
+          {
+            "from_name": "sentiment",
+            "id": "OeowH8_SuF",
+            "to_name": "text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "Negative"
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "data": {
+      "pesan": 6,
+      "text": "Pesen gold, kok dpt grey"
+    },
+    "id": 95
+  },
+  {
+    "completions": [
+      {
+        "created_at": 1593424452,
+        "id": 96001,
+        "lead_time": 36.172,
+        "result": [
+          {
+            "from_name": "sentiment",
+            "id": "f5frjSKsTV",
+            "to_name": "text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "Negative"
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "data": {
+      "pesan": 7,
+      "text": "Barang bukan baru tidak sesuai diskripsi , service seller sangat mengecewakan sekali , order lama sampai smnggu baru sampai , bukan di ekpedisi y tapi emng di seller y , mohon untuk di perbaiki supaya customer nyaman belanja di lapak ini, sorry bintang nya segini"
+    },
+    "id": 96
+  },
+  {
+    "completions": [
+      {
+        "created_at": 1593424460,
+        "id": 97001,
+        "lead_time": 3.541,
+        "result": [
+          {
+            "from_name": "sentiment",
+            "id": "VFfPPTdB_8",
+            "to_name": "text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "Neutral"
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "data": {
+      "pesan": 8,
+      "text": "barang nya cuku baik sesuai deskripsi, tapi sayang service nya kurang responsif dan kurang tepat janji nya soal pengiriman"
+    },
+    "id": 97
+  },
+  {
+    "completions": [
+      {
+        "created_at": 1593424465,
+        "id": 98001,
+        "lead_time": 1.59,
+        "result": [
+          {
+            "from_name": "sentiment",
+            "id": "zaoWgt6ww1",
+            "to_name": "text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "Positive"
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "data": {
+      "pesan": 9,
+      "text": "👍🏻👍🏻👍🏻👍🏻👍🏻👍🏻"
+    },
+    "id": 98
+  },
+  {
+    "completions": [
+      {
+        "created_at": 1593424481,
+        "id": 99001,
+        "lead_time": 12.044,
+        "result": [
+          {
+            "from_name": "sentiment",
+            "id": "VWwYtEUTGC",
+            "to_name": "text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "Positive"
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "data": {
+      "pesan": 10,
+      "text": "senang paketan nyampek dg cepat,bungkusnya rapi,warna dikasih yg rose,senang banget,layanan ramah dan sangat membantu sekali,rekomended bangets nih tokonya...\nmakasih buanyak ya...."
+    },
+    "id": 99
+  }
+]

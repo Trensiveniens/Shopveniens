@@ -48,7 +48,7 @@
 			<nav class="daftar" id="menu" style="background-color:#A2AF9F ;">
 				<ul class="links">
 					<li><a style="color: white;" href="index.html">Home</a></li>
-					<li><a style="color: white;" href="#CIKAN">Statistic</a></li>
+					<li><a style="color: white;" href="index.html#CIKAN">Statistic</a></li>
 					<li><a style="color: white;" href="#cta">About Us</a></li>
 					<li><a style="color: white;" href="#bisa">Team Members</a></li>
 					<li><a style="color: white;" href="#footer">Contact Us</a></li>
@@ -83,188 +83,340 @@
 
 </style>
 
-<!-- Resources -->
-<script src="https://www.amcharts.com/lib/4/core.js"></script>
-<script src="https://www.amcharts.com/lib/4/charts.js"></script>
-<script src="https://www.amcharts.com/lib/4/themes/dataviz.js"></script>
-<script src="https://www.amcharts.com/lib/4/themes/animated.js"></script>
+	
+	<table id="myTable">
+	  <tr>
+		<style>
+			table {
+			  border-spacing: 0;
+			  width: 100%;
+			  border: 1px solid #ddd;
+			}
+			
+			th, td {
+			  text-align: left;
+			  padding: 16px;
+			}
+			
+			tr:nth-child(even) {
+			  background-color: #f2f2f2
+			}
+			</style>
 
-<!-- Chart code -->
-<script>
-am4core.ready(function() {
-
-// Themes begin
-am4core.useTheme(am4themes_dataviz);
-am4core.useTheme(am4themes_animated);
-// Themes end
-
-// Create chart instance
-var chart = am4core.create("chartdiv", am4charts.PieChart);
-
-// Add and configure Series
-var pieSeries = chart.series.push(new am4charts.PieSeries());
-pieSeries.dataFields.value = "litres";
-pieSeries.dataFields.category = "country";
-
-// Let's cut a hole in our Pie chart the size of 30% the radius
-chart.innerRadius = am4core.percent(30);
-
-// Put a thick white border around each Slice
-pieSeries.slices.template.stroke = am4core.color("#fff");
-pieSeries.slices.template.strokeWidth = 2;
-pieSeries.slices.template.strokeOpacity = 1;
-pieSeries.slices.template
-  // change the cursor on hover to make it apparent the object can be interacted with
-  .cursorOverStyle = [
-    {
-      "property": "cursor",
-      "value": "pointer"
-    }
-  ];
-
-pieSeries.alignLabels = false;
-pieSeries.labels.template.bent = true;
-pieSeries.labels.template.radius = 3;
-pieSeries.labels.template.padding(0,0,0,0);
-
-pieSeries.ticks.template.disabled = true;
-
-// Create a base filter effect (as if it's not there) for the hover to return to
-var shadow = pieSeries.slices.template.filters.push(new am4core.DropShadowFilter);
-shadow.opacity = 0;
-
-// Create hover state
-var hoverState = pieSeries.slices.template.states.getKey("hover"); // normally we have to create the hover state, in this case it already exists
-
-// Slightly shift the shadow and make it more prominent on hover
-var hoverShadow = hoverState.filters.push(new am4core.DropShadowFilter);
-hoverShadow.opacity = 0.7;
-hoverShadow.blur = 5;
-
-// Add a legend
-chart.legend = new am4charts.Legend();
-
-chart.data = [{
-  "country": "Positive",
-  "litres": 58
-},{
-  "country": "Negative",
-  "litres": 29
-}, {
-  "country": "Neutral",
-  "litres": 13
-
-}];
-
-}); // end am4core.ready()
-</script>
-
-
-<style>
-#chartdiv1 {
-  width: 100%;
-  height: 500px;
-}
-</style>
-
-<!-- Chart code -->
-<script>
-am4core.ready(function() {
-
-// Themes begin
-am4core.useTheme(am4themes_dataviz);
-am4core.useTheme(am4themes_animated);
-// Themes end
-
-// Create chart instance
-var chart = am4core.create("chartdiv1", am4charts.XYChart);
-chart.scrollbarX = new am4core.Scrollbar();
-
-// Add data
-chart.data = [{
-  "country": "Positive",
-  "visits": 58
-}, {
-  "country": "Negative",
-  "visits": 29
-}, {
-  "country": "Neutral",
-  "visits": 13
-}];
-
-// Create axes
-var categoryAxis = chart.xAxes.push(new am4charts.CategoryAxis());
-categoryAxis.dataFields.category = "country";
-categoryAxis.renderer.grid.template.location = 0;
-categoryAxis.renderer.minGridDistance = 30;
-categoryAxis.renderer.labels.template.horizontalCenter = "right";
-categoryAxis.renderer.labels.template.verticalCenter = "middle";
-categoryAxis.renderer.labels.template.rotation = 270;
-categoryAxis.tooltip.disabled = true;
-categoryAxis.renderer.minHeight = 110;
-
-var valueAxis = chart.yAxes.push(new am4charts.ValueAxis());
-valueAxis.renderer.minWidth = 50;
-
-// Create series
-var series = chart.series.push(new am4charts.ColumnSeries());
-series.sequencedInterpolation = true;
-series.dataFields.valueY = "visits";
-series.dataFields.categoryX = "country";
-series.tooltipText = "[{categoryX}: bold]{valueY}[/]";
-series.columns.template.strokeWidth = 0;
-
-series.tooltip.pointerOrientation = "vertical";
-
-series.columns.template.column.cornerRadiusTopLeft = 10;
-series.columns.template.column.cornerRadiusTopRight = 10;
-series.columns.template.column.fillOpacity = 0.8;
-
-// on hover, make corner radiuses bigger
-var hoverState = series.columns.template.column.states.create("hover");
-hoverState.properties.cornerRadiusTopLeft = 0;
-hoverState.properties.cornerRadiusTopRight = 0;
-hoverState.properties.fillOpacity = 1;
-
-series.columns.template.adapter.add("fill", function(fill, target) {
-  return chart.colors.getIndex(target.dataItem.index);
-});
-
-// Cursor
-chart.cursor = new am4charts.XYCursor();
-
-}); // end am4core.ready()
-</script>
-
-
-
-
-
-
-<br>
-<header class="special" id="CIKAN">
-						<h2>BAR Chart Statistic</h2>
-						<p>The chart is based on a product from tokopedia that we scraped in the review content which then we labels them by the positive, negative, and neutral category
-the chart above that we used is from amChart Library bar and pie/dounuts type.</p>
-					</header>
-<div id="chartdiv1"></div>	
-
-
-<header class="special">
-						<h2>DOUNUT Chart Statistic</h2>
-						<p>The chart is based on a product from tokopedia that we scraped in the review content which then we labels them by the positive, negative, and neutral category
-the chart above that we used is from amChart Library bar and pie/dounuts type.</p>
-					</header>
-<div id="chartdiv"></div>
+			
+			
+			
+			<table id="myTable">
+			  <tr>
+				<th>No</th>
+				<th>Nama Barang</th>
+				<th>Komentar</th>
+			  </tr>
+			  <tr>
+				<th>1</th>
+				<td>Headset Oppo</td>
+				<td>Fast respon. Produk murah tapi tidak murahan. Packing aman & rapi. Pengiriman cepat. Recomended seller.</td>
+			  </tr>
+			  <tr>
+				<th>2</th>
+				<td>Headset Oppo</td>
+				<td>Produk baik, pengiriman cepat</td>
+			  </tr>
+			  <tr>
+				<th>3</th>
+				<td>Headset Oppo</td>
+				<td>Sesuai dengan harga fast respon pengiriman cepat</td>
+			  </tr>
+			  <tr>
+				<th>4</th>
+				<td>Tempered Glass</td>
+				<td>Masangnya cepat dan gampang banget. Semoga awet. Pengiriman cepat.</td>
+			  </tr>
+			  <tr>
+				<th>5</th> 
+				<td>Headset Bluetooth TWS</td>
+				<td>Bagus banget langsung bisa dipakai tidak mengecewakan</td>
+			  </tr>
+			  <tr>
+				<th>6</th>  
+				<td>Headset Bluetooth TWS</td>
+				<td>Mantaaabbbb....berfungsi dgn baik...pengiriman cepat..cs nya ramah....recommended</td>
+			  </tr>
+			  <tr>
+				<th>7</th>  
+				<td>Headset Bluetooth TWS</td>
+				<td>Sesuai pesanan cepat tepat n akurat,thank's</td>
+			  </tr>
+			  <tr>
+				<th>8</th>
+				<td>Headset Bluetooth TWS</td>
+				<td>barang ok, pengiriman cepat</td>
+			  </tr>
+			  <tr>
+				<th>9</th>
+				<td>Headset Bluetooth TWS</td>
+				<td>Kondisi & pengemasan bagus. Brg sesuai dng yg di tawarkan</td>
+			  </tr>
+			  <tr>
+				<th>10</th>
+				<td>North/South</td>
+				<td>Bagus barang sesuai dan cepat sampai</td>
+			  </tr>
+			  <tr>
+				<th>11</th>
+				<td>Tempered Glass</td>
+				<td>Seperti biasa sudah berapa kali belanja disini..Tempered Glass sangat berkualitas pas dengan layar hape..pengiriman dan respond super duper cepat..produk di bungkus rapi dan aman..TOP Markotop dah..Sangat Puas! Thanks Gan</td>
+			  </tr>
+			  <tr>
+				<th>12</th>
+				<td>Headset Bluetooth TWS</td>
+				<td>Pengirimannya sangat cepat dan pakungnya sangat bagus.</td>
+			  </tr>
+			  <tr>
+				<th>13</th>
+				<td>Headset Samsung</td>
+				<td>Sip lah..</td>
+			  </tr>
+			  <tr>
+				<th>14</th> 
+				<td>Headset Samsung</td>
+				<td>Suaranya jernih mantapp banget deh pokoknyaa dijamin ga nyesel👍👍👍😊</td>
+			  </tr>
+			  <tr>
+				<th>15</th>  
+				<td>Headset Samsung</td>
+				<td>Mantaaabbbb....berfungsi dgn baik...pengiriman cepat..cs nya ramah....recommended</td>
+			  </tr>
+			  <tr>
+				<th>16</th>  
+				<td>Headset Samsung</td>
+				<td>Mantaf bos,sesuai pesanan Respon cepet,pengiriman ok</td>
+			  </tr>
+			  <tr>
+				<th>17</th>
+				<td>Headset Samsung</td>
+				<td>Terima kasih</td>
+			  </tr>
+			  <tr>
+				<th>18</th>
+				<td>Mic BM 800</td>
+				<td>Fast response pembelian kesekian kalinya, kualitas tetap terjaga sukses terus gan</td>
+			  </tr>
+			  <tr>
+				<th>19</th>
+				<td>Mic BM 800</td>
+				<td>Bonus lengkap, pengiriman cepat</td>
+			  </tr>
+			  <tr>
+				<th>Mic BM 800</th>
+				<td>Koniglich Essen</td>
+				<td>Responsif, Recomended Seller deh,,, sukses terus ya gan</td>
+			  </tr>
+			  <tr>
+				<th>Mic BM 800</th>
+				<td>Magazzini Alimentari Riuniti</td>
+				<td>Masangnya cepat dan gampang banget. Semoga awet. Pengiriman cepat.</td>
+			  </tr>
+			  <tr>
+				<th>22</th> 
+				<td>Mic BM 800</td>
+				<td>Baguss</td>
+			  </tr>
+			  <tr>
+				<th>23</th>  
+				<td>Mic BM 800</td>
+				<td>Mantaaabbbb....berfungsi dgn baik...pengiriman cepat..cs nya ramah....recommended</td>
+			  </tr>
+			  <tr>
+				<th>24</th>  
+				<td>Mic BM 800</td>
+				<td>thanks udh nyampe, barang komplit, packing rapi bagus, berfungsi dgn baik</td>
+			  </tr>
+			  <tr>
+				<th>25</th>
+				<td>Nama Barang</td>
+				<td>Bagusss barang nya dan packing nya rapih</td>
+			  </tr>
+			  <tr>
+				<th>26</th>
+				<td>Berglunds snabbkop</td>
+				<td>Proses lumayan cepat, barang sampai dan berfungsi sesuai. Mantap!</td>
+			  </tr>
+			  <tr>
+				<th>27</th>
+				<td>North/South</td>
+				<td>Sesuai pesanan</td>
+			  </tr>
+			  <tr>
+				<th>28</th>
+				<td>Alfreds Futterkiste</td>
+				<td>Keren sesuai pesanan... Mantappp.. pengiriman cepat</td>
+			  </tr>
+			  <tr>
+				<th>29</th>
+				<td>Koniglich Essen</td>
+				<td>packing bagus, barang juga mantap udh di coba,, keren keren..</td>
+			  </tr>
+			  <tr>
+				<th>30</th>
+				<td>Magazzini Alimentari Riuniti</td>
+				<td>Asli puas bgt. customer merasa special dikasih gift card oleh seller. Brilliant!</td>
+			  </tr>
+			  <tr>
+				<th>31</th> 
+				<td>Paris specialites</td>
+				<td>Enak</td>
+			  </tr>
+			  <tr>
+				<th>32</th>  
+				<td>Island Trading</td>
+				<td>Barang bagus.... respon penjual cepat</td>
+			  </tr>
+			  <tr>
+				<th>33</th>  
+				<td>Laughing Bacchus Winecellars</td>
+				<td>seller best</td>
+			  </tr>
+			  <tr>
+				<th>34</th>
+				<td>Berglunds snabbkop</td>
+				<td>Oke..terimakasih..akhirnya datang juga ni itsuki ramen</td>
+			  </tr>
+			  <tr>
+				<th>35</th>
+				<td>North/South</td>
+				<td>Enak..</td>
+			  </tr>
+			  <tr>
+				<th>36</th>
+				<td>Alfreds Futterkiste</td>
+				<td>Sesuai permintaan</td>
+			  </tr>
+			  <tr>
+				<th>37</th>
+				<td>Koniglich Essen</td>
+				<td>Biasanya jarang kasih ulasan panjang, tapi penjual and produk ini harus banget dikasih ulasan. Ini pembelian kedua, awalnya cuma beli 4 pack dan 3 varian ramen, ternyata enak dan packingnya oke, ramennya nyampe dalam keadaan bagus (gak patah-patah). Akhirnya beli lagi karena pelayanan dan produk OK. Recommended!</td>
+			  </tr>
+			  <tr>
+				<th>38</th>
+				<td>Magazzini Alimentari Riuniti</td>
+				<td>Mantul, tempered glassnta oke banget</td>
+			  </tr>
+			  <tr>
+				<th>39</th> 
+				<td>Paris specialites</td>
+				<td>Barang sesuai pesanan, penjual responsif 🙏👍</td>
+			  </tr>
+			  <tr>
+				<th>40</th>  
+				<td>Island Trading</td>
+				<td>Barang bagus tepat waktu dan muda dioperasikan terima kasih</td>
+			  </tr>
+			  <tr>
+				<th>41</th>  
+				<td>Laughing Bacchus Winecellars</td>
+				<td>Cepat sampai, semoga awet</td>
+			  </tr>
+			  <tr>
+				<th>42</th>
+				<td>Nama Barang</td>
+				<td>Terbaikkkkkkkkk</td>
+			  </tr>
+			  <tr>
+				<th>43</th>
+				<td>Berglunds snabbkop</td>
+				<td>Sippp</td>
+			  </tr>
+			  <tr>
+				<th>44</th>
+				<td>North/South</td>
+				<td>Rekomended seller. Respon cpt brg smpai dgn aman. Smoga awet ga ad kndala d</td>
+			  </tr>
+			  <tr>
+				<th>45</th>
+				<td>Alfreds Futterkiste</td>
+				<td>Pesanan tepat waktu , mantappp</td>
+			  </tr>
+			  <tr>
+				<th>46</th>
+				<td>Koniglich Essen</td>
+				<td>Respon cepat, sesuai deskrip, semoga awet.</td>
+			  </tr>
+			  <tr>
+				<th>47</th>
+				<td>Magazzini Alimentari Riuniti</td>
+				<td>Mantap sangat puas. Sesuai sama yg di katalog. Pake gosend lebih cepat. Barang original. Bukan kaleng2. Tq buat yg buat toko. Mulai dulu ajah.</td>
+			  </tr>
+			  <tr>
+				<th>48</th> 
+				<td>Paris specialites</td>
+				<td>Sesuai deskripsi, semoga sukses selalu gaannnnnnn</td>
+			  </tr>
+			  <tr>
+				<th>49</th>  
+				<td>Island Trading</td>
+				<td>Sip all in good condition !</td>
+			  </tr>
+			  <tr>
+				<th>50</th>  
+				<td>Laughing Bacchus Winecellars</td>
+				<td>Thankyou, lama responn Tapi syukur masih bisa sampai dengan tepat waktu 👍🏻</td>
+			  </tr>
+			  <tr>
+				<th>51</th>
+				<td>Berglunds snabbkop</td>
+				<td>barang oke seller lbh ok. gokil sellernya bae bngt kasih bnyk bonus padahal ga minta</td>
+			  </tr>
+			  <tr>
+				<th>52</th>
+				<td>North/South</td>
+				<td>Gilaaaa,,,inii hp nya muluss bangettttt dan juga murahhh syekaliiiiii Terimakasih gan</td>
+			  </tr>
+			  <tr>
+				<th>53</th>
+				<td>Alfreds Futterkiste</td>
+				<td>Theee besstttt deehhh pokoknyaaaaa</td>
+			  </tr>
+			  <tr>
+				<th>54</th>
+				<td>Koniglich Essen</td>
+				<td>mantap thank u gan</td>
+			  </tr>
+			  <tr>
+				<th>55</th>
+				<td>Magazzini Alimentari Riuniti</td>
+				<td>Terimakasih barangnya sudah diterima dan berjalan dengan baik</td>
+			  </tr>
+			  <tr>
+				<th>56</th> 
+				<td>Paris specialites</td>
+				<td>Ok... Respon cepat....</td>
+			  </tr>
+			  <tr>
+				<th>57</th>  
+				<td>Island Trading</td>
+				<td>👍🏻👍🏻👍🏻👍🏻👍🏻👍🏻</td>
+			  </tr>
+			  <tr>
+				<th>58</th>  
+				<td>Laughing Bacchus Winecellars</td>
+				<td>senang paketan nyampek dg cepat,bungkusnya rapi,warna dikasih yg rose,senang banget,layanan ramah dan sangat membantu sekali,rekomended bangets nih tokonya... makasih buanyak ya....</td>
+			  </tr>
+			  <tr>
+			</table>
+			
+		
+	
 
 
 		<!-- CTA -->
 				<div class="tabel" style="margin: 10px; grid-gap: 1fr 1fr 1fr;">
-					<center><button style="margin: 10px;">
-						<a href="Tabel Positif.html#myTable" style="text-decoration: none">Positive</a>
+					<center>
+					<button style="margin: 10px;">
+							<a href="Tabel Negatif.html#myTable" style="text-decoration: none">Negative</a>
 					</button>
 					<button>
-						<a href="Tabel Negatif.html#myTable" style="text-decoration: none">Negative</a>
+						<a href="index.html#CIKAN" style="text-decoration: none">Back To Statistic</a>
 					</button>
 					<button style="margin: 10px;">
 						<a href="Tabel Netral.html#myTable" style="text-decoration: none">Neutral</a>
