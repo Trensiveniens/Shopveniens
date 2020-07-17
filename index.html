@@ -84,10 +84,7 @@
 </style>
 
 <!-- Resources -->
-<script src="https://www.amcharts.com/lib/4/core.js"></script>
-<script src="https://www.amcharts.com/lib/4/charts.js"></script>
 <script src="assets/js/dataviz.js"></script>
-<script src="https://www.amcharts.com/lib/4/themes/animated.js"></script>
 
 <!-- Chart code -->
 <script>
@@ -142,7 +139,6 @@ hoverShadow.opacity = 0.7;
 hoverShadow.blur = 5;
 
 // Add a legend
-chart.legend = new am4charts.Legend();
 
 chart.data = [{
   "country": "Positive",
@@ -157,6 +153,9 @@ chart.data = [{
 }];
 
 }); // end am4core.ready()
+
+
+
 </script>
 
 <style>
@@ -198,7 +197,6 @@ categoryAxis.renderer.grid.template.location = 0;
 categoryAxis.renderer.minGridDistance = 30;
 categoryAxis.renderer.labels.template.horizontalCenter = "right";
 categoryAxis.renderer.labels.template.verticalCenter = "middle";
-categoryAxis.renderer.labels.template.rotation = 270;
 categoryAxis.tooltip.disabled = true;
 categoryAxis.renderer.minHeight = 110;
 
@@ -260,13 +258,13 @@ the chart above that we used is from amChart Library bar and pie/dounuts type.</
 		<!-- CTA -->
 				<div class="tabel" style="margin: 10px; grid-gap: 1fr 1fr 1fr;">
 					<center><button style="margin: 10px;">
-						<a href="Tabel Positif.html#judul" style="text-decoration: none">Positive</a>
+						<a href="Tabel Positif.html#judul" style="color: #4BCA59">Positive</a>
 					</button>
 					<button>
-						<a href="Tabel Negatif.html#judul" style="text-decoration: none">Negative</a>
+						<a href="Tabel Negatif.html#judul" style="color: #d5433d">Negative</a>
 					</button>
 					<button style="margin: 10px;">
-						<a href="Tabel Netral.html#judul" style="text-decoration: none">Neutral</a>
+						<a href="Tabel Netral.html#judul" style="color: #E0D563">Neutral</a>
 					</button></center>	
 				</div>
 			<section id="cta" class="wrapper">
@@ -294,7 +292,7 @@ the chart above that we used is from amChart Library bar and pie/dounuts type.</
 								</blockquote>
 								<div class="author">
 									<div class="image">
-										<img src="" alt="" />
+										<img src=".//images/0.jpg" alt="" />
 									</div>
 									<p class="credit">- <strong>Abakh</strong> <span>Manager</span></p>
 								</div>
