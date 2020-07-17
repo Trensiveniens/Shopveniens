@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Mari Belajar Coding</title>
+<table class="table table-stripped">
+  <tbody id="data"></tbody>
+</table>
+
+   <script type="text/javascript">
+   fetch("").then(
+    res=> {
+      res.json().then(
+        data=>{
+          console.log(data);
+          if(data.length > 0){
+            var temp = "";
+
+
+              data.forEach((u)=>{
+                temp +="<tr>";
+                temp +="<td>"+u.choices+"</td>";
+                temp +="<td>"+u.netral+"</td>";
+
+              })
+              //close loop
+
+              document.getElementById("data").innerHTML = temp;
+          }
+        })
+    })
+   </script>
+</head>
+<body>
+ <div id="demo"></div>
+</body>
+</html>
