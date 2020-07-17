@@ -49,10 +49,10 @@
 				<ul class="links">
 					<li><a style="color: white;" href="index.html">Home</a></li>
 					<li><a style="color: white;" href="index.html#CIKAN">Statistic</a></li>
-					<li><a style="color: white;" href="#cta">About Us</a></li>
-					<li><a style="color: white;" href="#bisa">Team Members</a></li>
+					<li><a style="color: white;" href="index.html#cta">About Us</a></li>
+					<li><a style="color: white;" href="index.html#bisa">Team Members</a></li>
 					<li><a style="color: white;" href="#footer">Contact Us</a></li>
-					<li><a style="color: white;" href="DATAJSON.html#judul">Labeling JSON</a></li>
+					
 
 				</ul>
 			</nav>
@@ -66,129 +66,48 @@
 				<video autoplay loop muted playsinline src=".//images/videoplayback.mp4" style="background-color: #333;"></video>
 
 			</section>
-
-
-
-
-
-	
-	
-	<table id="myTable">
-	  <tr>
-		<style>
-			table {
-			  border-spacing: 0;
-			  width: 100%;
-			  border: 1px solid #ddd;
-			}
-			
-			th, td {
-			  text-align: left;
-			  padding: 16px;
-			}
-			
-			tr:nth-child(even) {
-			  background-color: #f2f2f2
-			}
-			</style>
-
 			<br><br>
-		<div id="judul">
-			<center>
-				<h1>TABEL ULASAN NETRAL</h1>
-			</center>
-		</div>
-			<table id="myTable">
-			  <tr>
-				<th>No</th>
-				<th>Nama Barang</th>
-				<th>Komentar</th>
-			  </tr>
-			  <tr>
-				<th>1</th>
-				<td>Tempered Glass</td>
-				<td>Mantapp, tapi ternyata gak fully covered pinggirannya, tp its ok</td>
-              </tr>
-              <tr>
-				<th>2</th>
-				<td>Headset Oppo</td>
-				<td>Lumayan bagus sesuai dengan harganya.</td>
-			  </tr>
-			  <tr>
-				<th>3</th>
-				<td>Headset Oppo</td>
-				<td>Mic nya tidak berfungsi 😭. Packing aman & rapi. Pengiriman cepat, gratis lagi. Recomended seller.</td>
-              </tr>
-			  <tr>
-				<th>4</th>
-				<td>Headset Oppo</td>
-				<td>Lumayan ajib ...sesuai harganya</td>
-              </tr>
-              <tr>
-				<th>5</th>
-				<td>Headset Bluetooth TWS</td>
-				<td>Belum dicobain sih mudah2an berfungsi semua. Saran saja utk pengemasan untuk lebih diperbaiki lagi padahal udh bubble wrap karena mau dijual lagi. Semoga sukses.</td>
-              </tr>
-              <tr>
-				<th>6</th>
-				<td>Ramen Itsuki</td>
-				<td>😀</td>
-			  </tr>
-			  <tr>
-				<th>7</th>
-				<td>Iphone 6 64GB</td>
-				<td>Produk original, expired sesuai deskripsi, harga bersaing, untuk rasa belum dicoba jadi gak bisa komen</td>
-			  </tr>
-			  <tr>
-				<th>8</th>
-				<td>Ramen Itsuki</td>
-				<td>belum coba yang rasa ini, tapi kuah tonkotsu harusnya tidak diragukan lagi</td>
-			  </tr>
-			  <tr>
-				<th>9</th> 
-				<td>Xiaomi Redmi 4X</td>
-				<td>Packaging lmyn rapi lah... Dan baru tau kalo hp ini punya lampu indikator yang tembus pandang... Semoga aja g palsu atau daur ulang</td>
-			  </tr>
-			  <tr>
-				<th>10</th>  
-				<td>Iphone 6 64GB</td>
-				<td> </td>
-			  </tr>
-			  <tr>
-                <th>11</th>  
-				<td>Iphone 6 64GB</td>
-				<td> </td>
-              </tr>
-                <th>12</th>  
-                <td>Iphone 6 64GB</td>
-                <td> </td>
-              </tr>  
-              <th>13</th>  
-              <td>Iphone 6 64GB</td>
-              <td> </td>
-              </tr>
-			</table>
-			
-		
-	
+			<div id="judul">
+				<center>
+					<h1>TABEL HASIL LABELING</h1>
+				</center>
+			</div>
 
+            <div class="container">
+                <table class="table table-stripped">
+                  <thead>
+                    <tr>
+                      <th>Labelling</th>
+                      <th>Review</th>
+                    </tr>
+                  </thead>
+                  <tbody id="data"></tbody>
+                </table>
+              
+                 <script type="text/javascript">
+                 fetch("https://raw.githubusercontent.com/Trensiveniens/Shopveniens/master/result.json").then(
+                  res=> {
+                    res.json().then(
+                      data=>{
+                        console.log(data);
+                        if(data.length > 0){
+                          var temp = "";
+              
+              //looping
+                            data.forEach((u)=>{
+                              temp +="<tr>";
+                              temp +="<td>"+u.choices+"</td>";
+                              temp +="<td>"+u.text+"</td>";
+              
+                            })
+                            //close loop
+              
+                            document.getElementById("data").innerHTML = temp;
+                        }
+                      })
+                  })
+                 </script>
 
-		<!-- CTA -->
-				<div class="tabel" style="margin: 10px; grid-gap: 1fr 1fr 1fr;">
-					<center>
-					    <button style="margin: 10px;">
-					    	<a href="Tabel Positif.html#judul" style="color: #4BCA59; text-decoration: none;">Positive</a>
-                        </button>
-                        
-				        <button>
-				    		<a href="index.html#CIKAN" style="text-decoration: none; color: aqua;">Back To Statistic</a>
-                        </button>
-				        <button style="margin: 10px;">
-				    		<a href="Tabel Negatif.html#judul" style="color: #d5433d; text-decoration: none;">Negative</a>
-                        </button>
-                    </center>	
-				</div>
-			
 		<!-- Footer -->
 			<footer id="footer" style="background-color:#323B31; ;">
 				<div class="inner" style="color: white;">
