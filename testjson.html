@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <div id="chartContainer" style="height: 370px; max-width: 1000px; margin: 0px auto;"></div>
+    <script type="text/javascript">
+        let theResults = [], theCompletions = [], theResult2 = [], theId = [],
+theResult3 = [], theValue = [], image, comPletion = [], results = [],
+poly = [];
+
+let positive = 0, negative = 0, neutral = 0;
+
+//Count the polygonlabels object
+let showResults = function(){
+    for(let prop in theResults){
+        theCompletions = theResults[prop];
+        for(let comp in theCompletions){
+            theResult2 = theCompletions[comp];
+            image = theResult2.image;
+            comPletion = theResult2[0];
+            for(let Res in comPletion){
+                theId = comPletion[Res];
+                for (var i = theId.length - 1; i >= 0; i--) {
+                    results = theId[i];
+                    for(let Res2 in results){
+                        theResult3 = results[Res2];
+                        poly = theResult3.polygonlabels;
+                        for(let val in poly){
+                            theValue = poly[val];
+                            if(theValue == "Positive"){
+                                plant += 1 ;
+                            }else if(theValue == "Negative"){
+                                water += 1;
+                            }else if(theValue == "Neutral"){
+                                human += 1;
+                        };
+                    };
+                };
+            };
+        };  
+    };
+}
+
+//open json file
+fetch("result.json")
+    .then(function(resp){
+        return resp.json();
+    })
+    .then(function(data){
+        console.log(data);
+        theResults = data;
+        showResults();
+
+        //printing polygonlabels object
+        console.log("Positive : " + positive);
+        console.log("Neutral : " + neutral);
+        console.log("Negative : " + negative);
+        document.getElementById("p1").innerHTML += "Positive : " + positive + "<br>";
+        document.getElementById("p1").innerHTML += "Neutral : " + neutral + "<br>";
+        document.getElementById("p1").innerHTML += "Negative :" + negative + "<br>";
+    });
+    </script>
+
+    <script src="assets/js/dataviz.js"></script>
+
+<!-- Chart code -->
+<script>
+am4core.ready(function() {
+
+// Themes begin
+am4core.useTheme(am4themes_dataviz);
+am4core.useTheme(am4themes_animated);
+// Themes end
+
+// Create chart instance
+var chart = am4core.create("chartdiv", am4charts.PieChart);
+
+// Add and configure Series
+var pieSeries = chart.series.push(new am4charts.PieSeries());
+pieSeries.dataFields.value = "litres";
+pieSeries.dataFields.category = "country";
+
+// Let's cut a hole in our Pie chart the size of 30% the radius
+chart.innerRadius = am4core.percent(30);
+
+// Put a thick white border around each Slice
+pieSeries.slices.template.stroke = am4core.color("#fff");
+pieSeries.slices.template.strokeWidth = 2;
+pieSeries.slices.template.strokeOpacity = 1;
+pieSeries.slices.template
+  // change the cursor on hover to make it apparent the object can be interacted with
+  .cursorOverStyle = [
+    {
+      "property": "cursor",
+      "value": "pointer"
+    }
+  ];
+
+pieSeries.alignLabels = false;
+pieSeries.labels.template.bent = true;
+pieSeries.labels.template.radius = 3;
+pieSeries.labels.template.padding(0,0,0,0);
+
+pieSeries.ticks.template.disabled = true;
+
+// Create a base filter effect (as if it's not there) for the hover to return to
+var shadow = pieSeries.slices.template.filters.push(new am4core.DropShadowFilter);
+shadow.opacity = 0;
+
+// Create hover state
+var hoverState = pieSeries.slices.template.states.getKey("hover"); // normally we have to create the hover state, in this case it already exists
+
+// Slightly shift the shadow and make it more prominent on hover
+var hoverShadow = hoverState.filters.push(new am4core.DropShadowFilter);
+hoverShadow.opacity = 0.7;
+hoverShadow.blur = 5;
+
+// Add a legend
+
+chart.data = [{theResults
+
+}];
+
+}); // end am4core.ready()
+
+
+
+</script>
+
+
+</body>
+
+</html>
